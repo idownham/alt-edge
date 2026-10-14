@@ -1,6 +1,6 @@
 # alt-edge (Project Bloodhound) — Spec
 
-*Captured 2026-10-14 in the planning chat. Status: S0 (started 2026-10-14). Criteria: PROPOSED v2, awaiting Ian.*
+*Captured 2026-10-14 in the planning chat. Status: S0 (started 2026-10-14). Criteria: v2 CONFIRMED 2026-10-14.*
 
 ## Hypothesis
 Some prediction markets — starting with **mention markets** ("Will [person] say [word] during [event]?") — are
@@ -29,49 +29,56 @@ that many traders skip. Expand to other categories only after the method is show
   the time? Is it better calibrated than the market's price (Brier/log score)? Out-of-sample only.
 - Paper trade: log every market where model − price > fees + margin; track results.
 
-## Pre-registered criteria — PROPOSED v2 (2026-10-14), NOT CONFIRMED
-*Written by Claude from S0 findings (`docs/s0-research.md`) before any outcome data was analysed. Nothing here is
-binding until Ian approves it in `docs/decisions.md`. Open questions are Q1–Q9 in the S1 plan doc
-(`docs/s1-plan.md`).*
+## Pre-registered criteria — v2, CONFIRMED by Ian 2026-10-14
+*Drafted by Claude from S0 findings (`docs/s0-research.md`). Confirmed by Ian 2026-10-14 (Q1–Q9, `docs/decisions.md`)
+before any outcome data was analysed. Any change is recorded in `decisions.md`, with the reason, before it is
+applied.*
 
 **Why v1 changed:** mention markets close early once the word is said (`can_close_early`), so the last price on a
 YES is about $0.99. Scoring against the "closing price" would let the market see the answer. The benchmark is moved
 to a fixed pre-event time.
 
-**Universe.** Settled `KXTRUMPMENTION` word markets. Excluded: "Event does not qualify" strikes; events with no
-scheduled start time on Roll Call Factbase; markets with no two-sided quote, or a yes spread > 10¢, at the reference
-time. These filters use only prices and schedules, never results, and are applied before scoring.
+**Universe.** Settled `KXTRUMPMENTION` word markets (**primary**: alone decides PASS/STOP). Settled `KXVANCEMENTION`
+word markets (**secondary**): scored and reported separately under the same rules, and they never change the gate
+verdict. If no usable Vance transcript or start-time source is found by the freeze, Vance is dropped and noted.
+Excluded from both: "Event does not qualify" strikes; events with no scheduled start time (Roll Call Factbase for
+Trump; the Vance source is chosen in S1 before the freeze); markets with no two-sided quote, or a yes spread > 10¢,
+at the reference time. These filters use only prices and schedules, never results, and are applied before scoring.
 
-**Reference time and market price.** T_ref = scheduled start (Factbase calendar, ET) − 15 min. Market probability
+**Reference time and market price.** T_ref = scheduled start (ET, from the schedule source above) − 15 min. Market probability
 p_mkt = midpoint of yes_bid and yes_ask from the 1-minute candlestick ending at or just before T_ref.
 
 **Model inputs (no look-ahead).** Only transcripts with event dates before the event's date, and only information
 public at T_ref. The model's code and parameters are frozen (git commit hash recorded in `decisions.md`) before the
 test set is scored. AI-produced inputs are logged (prompt, model, timestamp), per `CLAUDE.md` rule 4.
 
-**Split.** Development = events whose first market closed 2025-04-02 → 2026-05-31 (157 events / 4,114 markets before
-filters); used freely to build and tune. Held-out test = events 2026-06-01 → 2026-10-14 (84 events / 2,744 markets
-before filters). **The test set is scored exactly once**, after the freeze.
+**Split.** Development = events whose first market closed 2025-04-02 → 2026-05-31 (Trump 157 events / 4,114 markets,
+Vance 39 / 883, before filters); used freely to build and tune. Held-out test = events 2026-06-01 → 2026-10-14
+(Trump 84 / 2,744, Vance 32 / 796, before filters). **The test set is scored exactly once**, after the freeze.
 
-**Calibration gate (PASS needs all of these):**
+**Calibration gate — KXTRUMPMENTION (PASS needs all of these):**
 1. ≥ 300 test markets across ≥ 30 test events after filters.
 2. Model Brier < market Brier (p_mkt) on the test set.
 3. Event-clustered bootstrap (resample events, 10,000 draws, fixed seed): the 95% upper bound of
    (model Brier − market Brier) is < 0.
 4. Reported but not gating: log loss, a reliability table (10 bins), and results by event type.
+5. Vance secondary result: the same tests 1–3 on KXVANCEMENTION, reported as its own pass / fail / too-few-events
+   result. Not part of the gate.
 
-**Paper-trade gate** (only after a calibration PASS; forward events listed after the freeze, nothing re-used from
-the test set):
+**Paper-trade gate** (KXTRUMPMENTION only; only after a calibration PASS; forward events listed after the
+freeze, nothing re-used from the test set):
 - Signal: |p_model − price| > taker fee at that price + 3¢. Buy YES at yes_ask or NO at (1 − yes_bid), from the
-  1-minute candle at T_ref. 10 contracts, held to settlement. Fees ceil-to-cent 0.07·C·P·(1−P). Money in Decimal.
+  1-minute candle at T_ref. **5 contracts**, held to settlement. Taker fee ceil-to-cent 0.07·C·P·(1−P), no maker fee
+  (Ian checked kalshi.com/fee-schedule 2026-10-14). Money in Decimal.
 - PASS: ≥ 50 paper trades across ≥ 10 events, total net P&L after fees > 0, and the edge where the model predicted
-  it (the trades with the largest predicted edge do at least as well as the rest).
+  it: sorted by predicted edge, the top half's net P&L per trade ≥ the bottom half's.
+- If 2026-11-22 arrives first: report **INCOMPLETE** with the trades so far. Thresholds are not lowered; collection
+  continues after the class.
 - Reconstructed after the fact from public candlesticks, so no continuously running collector is needed.
 
 **STOP (any one ends the mention-market line):**
 - The test-set point estimate of model Brier ≥ market Brier.
-- Fewer than 30 usable test events after filters (data not feasible), or Factbase use is ruled out (Q4) with no
-  replacement.
+- Fewer than 30 usable Trump test events after filters (data not feasible).
 - Paper trading is net negative after fees at 50 trades.
 - **Inconclusive** (model better on the point estimate, but the CI crosses 0): no re-tuning on the test set. One
   extension only: score the frozen model on new events through 2026-11-20, then PASS or STOP on all of it together.

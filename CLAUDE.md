@@ -8,7 +8,8 @@ Owner: Ian Downham (GitHub: idownham). Shared portfolio rules: `../CLAUDE.md` (a
 ## Current stage
 **S0 — research + lock the criteria (started early 2026-10-14, see `docs/decisions.md`).** Read-only desk research
 only; no continuously running collectors until a slot opens (Coin Toss recording done ~Oct 22, or Osprey Decision A
-= STOP). Findings: `docs/s0-research.md`. Criteria in `docs/spec.md` stay DRAFT until Ian approves them. Update this
+= STOP). Findings: `docs/s0-research.md`. Criteria v2 in `docs/spec.md` **confirmed by Ian 2026-10-14** (Trump primary, Vance secondary); S1 plan:
+`docs/s1-plan.md`, starts on Ian's go. Update this
 line when the stage changes.
 
 ## Hard rules

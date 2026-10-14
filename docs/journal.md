@@ -64,3 +64,29 @@ comes from one snapshot. The White House transcript-removal claim is second-hand
 - Claude's own suggestions that Ian still has to judge: benchmark at start − 15 min, the ≥ 30 events floor, the
   event-clustered bootstrap, KXTRUMPMENTION-only scope, and the dev/test split date. **Ian's verdict:** pending
   (Q1–Q9 in `docs/s1-plan.md`); record accepted / revised / rejected here when decided.
+
+---
+
+## 2026-10-14 (later) — Criteria v2 confirmed: Ian's answers to Q1–Q9
+
+**Work:** Ian went through Q1–Q9 (`docs/s1-plan.md`) one at a time in the same Claude Code session ("Let's go through
+Q1–Q9 … one at a time so I can approve or revise the v2 criteria"). The answers were recorded in `decisions.md`
+**before any outcome data was looked at**. `spec.md` is marked CONFIRMED, the S1 plan is updated, and the stage line
+in `CLAUDE.md` is updated.
+
+**AI use + Ian's judgment** (Claude offered a recommended option for each; Ian picked):
+- **Accepted:** Q1 benchmark at scheduled start − 15 min; Q2 spread ≤ 10¢; Q4 Factbase allowed with limits (≤ 1
+  page / 2 s, cached locally, not redistributed or used for training); Q5 test set from 2026-06-01; Q6 95% clustered
+  bootstrap bound; Q7 top half ≥ bottom half, and INCOMPLETE if the deadline hits rather than lowering the bar.
+- **Revised:** Q3. Claude recommended Trump only; Ian chose **Trump and Vance**, and asked to add exploring more
+  mention series to the plan. In a follow-up question (Q3a), Ian accepted Claude's suggestion that Trump alone decides
+  PASS/STOP, that Vance is reported separately, and that Vance is dropped (and noted) if no source is found. Claude
+  pointed out the Vance test set is small (32 events before filters), so its own result may end up "too few events".
+- **Changed from Claude's first draft:** Q8 paper size is 5 contracts, not the 10 first proposed (Claude re-recommended
+  5 after the thin top-of-book snapshot).
+- **Ian's own check:** Q9. Ian checked kalshi.com/fee-schedule in a browser: taker 0.07·C·P·(1−P), no maker fee on
+  `quadratic` series. That closes the gap left when the PDF blocked automated download.
+
+**⭐ Evidence → decision → consequence:** the S0 finding (markets close early, so the closing price contains the
+answer) → Ian confirmed the pre-event benchmark (Q1) → the gate now compares against a price from before the event,
+and S1 has to build a schedule-to-event mapping (Factbase start times) as a required step.
