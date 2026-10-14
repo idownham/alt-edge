@@ -6,9 +6,10 @@ live updating) produces better-calibrated probabilities than the market price �
 Owner: Ian Downham (GitHub: idownham). Shared portfolio rules: `../CLAUDE.md` (alt-hq).
 
 ## Current stage
-**PLANNED — not started.** Don't build until Ian starts it (trigger: Coin Toss recording done ~Oct 22, or Osprey
-Decision A = STOP). First stage when started: S0 research (see `docs/spec.md` → Open questions). Update this line
-when the stage changes.
+**S0 — research + lock the criteria (started early 2026-10-14, see `docs/decisions.md`).** Read-only desk research
+only; no continuously running collectors until a slot opens (Coin Toss recording done ~Oct 22, or Osprey Decision A
+= STOP). Findings: `docs/s0-research.md`. Criteria in `docs/spec.md` stay DRAFT until Ian approves them. Update this
+line when the stage changes.
 
 ## Hard rules
 1. **Read-only research.** No order code until a calibration backtest passes and Ian records a dated decision.
