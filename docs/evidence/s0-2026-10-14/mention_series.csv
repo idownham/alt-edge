@@ -1,0 +1,460 @@
+ticker,title,frequency,fee_type,fee_multiplier,contract_terms,tags
+KX60MINMENTION,60 Minutes,one_off,quadratic,1,MENTION.pdf,
+KXABNBMENTION,Airbnb Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXACKMANMENTION,Bill Ackman,one_off,quadratic,1,MENTION.pdf,Business
+KXACOOPERMENTION,Anderson Cooper,one_off,quadratic,1,MENTION.pdf,
+KXALLINMENTION,All in with Chris Hayes,one_off,quadratic,1,MENTION.pdf,Politicians
+KXALTHOFFMENTION,Judson Althoff ,one_off,quadratic,1,MENTION.pdf,Business
+KXALTMANMENTION,Sam Altman Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXALUNMENTION,Anna Paulina Luna mentions,one_off,quadratic,1,MENTION.pdf,
+KXAMODEIMENTION,Amodei ,one_off,quadratic,1,MENTION.pdf,Business
+KXANVCD,dvdvsfv,one_off,quadratic,1,SPEAKDURATION.pdf,Politicians
+KXAOCMENTION,AOC Mention,one_off,quadratic,1,MENTION.pdf,
+KXAPPLEMENTION,What will John Ternus say at the Apple Event,one_off,quadratic,1,MENTION.pdf,Business
+KXARMSTRONGMENTION,Brian Armstrong ,one_off,quadratic,1,MENTION.pdf,Business
+KXATHLETEMENTION,Athlete Mentions,one_off,quadratic,1,MENTION.pdf,Sports
+KXATPMENTION,ATP Mentions,one_off,quadratic,1,SPORTSMENTION.pdf,Sports
+KXAWARDMENTION,Award Mention,one_off,quadratic,1,MENTION.pdf,Entertainment
+KXBACHELORETTEMENTION,BACHELORETTE,one_off,quadratic,1,MENTION.pdf,
+KXBAMENTION,Boeing Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXBANNONMENTION,Steve Bannon,one_off,quadratic,1,MENTION.pdf,
+KXBARKLEYMENTION,Charles Barkley Mention,one_off,quadratic,1,MENTION.pdf,
+KXBARRMENTION,Barr Mention,one_off,quadratic,1,MENTION.pdf,
+KXBBMENTION,Big Brother Mentions,one_off,quadratic,1,MENTION.pdf,Entertainment
+KXBDONMENTION,Byron Donalds mentions,one_off,quadratic,1,MENTION.pdf,
+KXBENIOFFMENTION,Marc Benioff Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXBERNIEMENTION,Bernie says,one_off,quadratic,1,MENTION.pdf,
+KXBESSENTMTPMENTION,What will Scott Bessent say,one_off,quadratic,1,MENTION.pdf,
+KXBIANCOMENTION,Chad Bianco Mention,one_off,quadratic,1,MENTION.pdf,
+KXBIDENMENTION,Biden Speech Mention,custom,quadratic,1,MENTION.pdf,
+KXBIEBERMENTION,What will Hailey Bieber say?,one_off,quadratic,1,MENTION.pdf,Business
+KXBILATERALMENTION,Bilateral Mention,one_off,quadratic,1,MENTION.pdf,
+KXBONDIMENTION,Pam Bondi ,one_off,quadratic,1,MENTION.pdf,
+KXBONGINOMENTION,Bongino,one_off,quadratic,1,MENTION.pdf,
+KXBOWMANMENTION,Michelle Bowman Mention,one_off,quadratic,1,MENTION.pdf,
+KXBRKEM,What will Berkshire Hathaway say on their next earnings call?,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXBRKMENTION,What will Berkshire Hathaway say on their next earnings call?,one_off,quadratic,1,MENTION.pdf,
+KXBTCMENTIONULBRICHT,Ross,custom,quadratic,1,KXBTCMENTION.pdf,
+KXBTCMENTIONVANCE,Vance,custom,quadratic,1,KXBTCMENTION.pdf,Politicians
+KXBURNHAMMENTION,Andy Burnham mention,one_off,quadratic,1,MENTION.pdf,
+KXBUSHMENTION,George Bush ,one_off,quadratic,1,MENTION.pdf,
+KXBUSINESSROUNDTABLE,What will Trump say at the Business Roundtable?,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXCANDACEMENTION,Candace Owens Mention,one_off,quadratic,1,MENTION.pdf,
+KXCANDEBMENTION,Canada Leaders Debate Mention,custom,quadratic,1,MENTION.pdf,
+KXCARLSONMENTION,Tucker Carlson,one_off,quadratic,1,MENTION.pdf,
+KXCARNEYMENTION,Carney Mention,one_off,quadratic,1,MENTION.pdf,
+KXCATMENTION,Caterpillar Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXCENAMENTION,John Cena Mention,one_off,quadratic,1,MENTION.pdf,
+KXCFBMENTION,CFB,one_off,quadratic,1,MENTION.pdf,
+KXCMAMENTION,CMA Awards,one_off,quadratic,1,MENTION.pdf,
+KXCOLBERTMENTION,Colbert Mention,one_off,quadratic,1,MENTION.pdf,
+KXCONGRESSMENTION,Congress Mention,one_off,quadratic,1,MENTION.pdf,
+KXCOOPERMENTION,Alex Cooper Mention,one_off,quadratic,1,MENTION.pdf,
+KXCOSTAMENTION,António Costa Mention,one_off,quadratic,1,MENTION.pdf,
+KXCRMMENTION,Salesforce Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXCROCKETTMENTION,Jasmine Crockett,one_off,quadratic,1,MENTION.pdf,
+KXCRYPTOSUMMIT,What will Trump say at the White House Crypto Summit?,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXCULTUREMENTION,Culture,one_off,quadratic,1,MENTION.pdf,Entertainment
+KXCUOMOMENTION,Cuomo Mention,one_off,quadratic,1,MENTION.pdf,
+KXDEBATEMENTION,Debate Mentions,one_off,quadratic,1,MENTION.pdf,
+KXDESANTISMENTION,Ron Desantis,one_off,quadratic,1,MENTION.pdf,
+KXDILLONMENTION,Tim Dillon Mention,one_off,quadratic,1,MENTION.pdf,
+KXDIMONMENTION,Jamie Dimon Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXDJTCANG7,CANG7,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXDJTCONF,Trump press conference,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXDJTCPAC,Trump conference at CPAC,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXDJTDAS,What will Trump say in his address to the Digital Asset Summit?,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXDJTFRENCHREP,Trump press conference WITH FRENCH REPUBLIC,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXDJTHANNITY,Trump interview with Sean Hannity,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXDJTINVESTMENT,"What will Trump say at the ""investment announcement""?",custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXDJTJOINTSESSION,Joint Session of Congress,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXDJTJUSTICEMENTION,What will trump say at the Justice Department speech?,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXDJTLANDRY,Trump / Landry mention,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXDJTMEXG7,MEXG7,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXDJTNATOMENTION,What will Trump say in his meeting with the Secretary General of NATO?,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXDJTRALLY,Trump Rally mention,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXDJTRGA,TRUMP conference at RGA,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXDJTUKRG7,UKRG7,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXDJTWOMENS,What will Trump say at the women's history event?,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXDOGSHOWMENTION,Dog Show,one_off,quadratic,1,MENTION.pdf,
+KXDRAKEMENTION,Drake Mentions,one_off,quadratic,1,MENTION.pdf,Entertainment
+KXDROZMENTION,Dr Oz Mention,one_off,quadratic,1,MENTION.pdf,
+KXDWTSMENTION,DWTS Mention,one_off,quadratic,1,MENTION.pdf,
+KXEARNIGNSMENTIONJPM,JPM Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONAAL,AAL Mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONAAOI,Applied Optoelectronics Inc,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONAAP,Advance Auto Parts Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONAAPL,Apple earnings mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONABNB,ABNB Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONAC,Air Canada Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONACA,Air Canada Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONACI,Albertsons,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONACN,Accenture,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONADBE,Adobe Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONADOBE,What will Adobe say during its earnings call?,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONALIBABA,alibaba earnings mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONALK,Alaska Airlines Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONALLY,Ally Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONAMAT,"Applied Materials, Inc.",one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONAMC,AMC earnings mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONAMD,AMD earnings menti,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONAMZN,Amazon earnings mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONANF,Abercrombie,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONARITZIA,Aritzia,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONAS,Amer Sports Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONASTS,AST SpaceMobile,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONATZ,Aritzia Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONAVAV,AeroVironment,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONAVGO,Broadcom Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONAXP,AMEX Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONAZO,Auto Zone,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONBA,Boeing Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONBAC,Bank of America Earnings Mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONBB,BlackBerry Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONBJ,BJ's Wholesale Club Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONBLK,What will BlackRock say at their earnings call?,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONBULL,Webull Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONC,Citi Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONCALM,Cal-Maine Foods,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONCAR,Avis ,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONCAVA,Cava Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONCBRL,Cracker Barrel Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONCBRS,Cerebras,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONCCL,Carnival Cruise Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONCELH,Celsius Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONCHWY,Chewy Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONCIEN,Ciena Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONCMG,Chipotle Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONCOHR,Coherent Corp.,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONCOINBASE,coinbase earnings mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONCOST,What will Costco say on their next earnings call?,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONCRCL,Circle Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONCRM,What Will Salesforce Say During Their Earnings Call?,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONCRWD,CrowdStrike Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONCRWV,CoreWeave Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONCVNA,Carvana,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONDAL,Delta Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONDASH,DoorDash,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONDE,Deere,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONDEER,John Deere,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONDELL,Dell Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONDIS,disney earnings m,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONDKNG,DraftKings Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONDKS,What Will DICK’S Sporting Goods Say During Their Earnings Call?,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONDOCUSIGN,What will Docusign say during its earnings call?,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONDOLLARGENERAL,What will Dollar General say during its earnings call?,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONDPZ,Dominos,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONDUOL,Duolingo Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONEA,EA Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONEBAY,Ebay Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONETOR,Etoro,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONF,Ford earnings mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONFDX,What will FedEx say during their earnings call?,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONFIG,Figma,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONFUTU,Futu Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONGEV,GE VERNOVA,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONGIS,General Mills Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONGM,GM ,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONGME,GME earnings mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONGOOGL,earnings mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONGRAB,Grab Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONGS,Goldman Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONHD,Home Depot,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONHIMS,Hims Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONHLT,HILTON,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONHOOD,Robinhood Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONHPE,Hewlett Packard Enterprise,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONINTC,Intel Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONINTU,What Will Intuit Say During Their Earnings Call?,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONISRG,Intuitive Surgical,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONJNJ,JNJ,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONJPM,JPM Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONKKR,KKR,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONKLAR,Klarna Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONKMX,CarMax,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONKO,Coca Cola Earnings Mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONKR,Kroger,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONKTOS,Kratos,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONLEVI,Levi's Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONLLY,Eli Lily,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONLMT,Lockheed Martin Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONLOW,Lowe's Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONLUCID,lucid earnings mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONLULU,Lululemon Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONLUNR,Intuitive Machines earnings call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONLYFT,Lyft Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONM,Macy's Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONMA,Mastercard,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONMCD,McDonalds Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONMCO,Moodys,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONMDT,Medtronic Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONMELI,Mercado Libre Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONMETA,earnings mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONMKC,McCormick,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONMRVL,Marvell Technology,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONMS,Morgan Stanley Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONMSFT,Microsoft earnings mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONMSTR,Microstrategy Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONMTN,Vail Resorts,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONMU,Micron,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONNBIS,Nebius Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONNFLX,What will netflix say on their next earnings call?,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONNIO,What will Nio say during their earnings call?,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONNKE,What Will Nike Say During Their Earnings Call?,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONNVDA,NVDA Earnings Mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONNYT,New York Times,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONOKLO,Oklo Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONON,ON Semi,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONORCL,What will Oracle say in their earnings call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONPANW,Palo Alto Networks Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONPATH,UiPath Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONPEP,Pepsi Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONPG,Proctor & Gamble Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONPGR,Progressive Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONPLTR,Palantir earnings mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONPSKY,Paramount,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONPYPL,PayPal Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONQCOM,Qualcomm,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONRACE,Ferrari Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONRDDT,Reddit Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONRIVN,Rivian Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONRKLB,Rocket Lab Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONROKU,Roku Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONROST,Ross Stores Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONRY,Royal Bank of Canada,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONSBUX,Starbucks Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONSFM,Sprouts,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONSHOP,Shopify,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONSJM,JM Smucker Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONSNAP,SNAP earnings mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONSNOW,Snowflake Earnings,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONSPCX,SpaceX Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONSPOT,Spotify,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONSTZ,Constellation Brands,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONSYUM,Yum! Brands,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONTFC,Truist Financial Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONTGT,Target,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONTLN,Talen Energy Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONTOL,Toll Brothers Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONTOST,"Toast, Inc.",one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONTSLA,Tesla earnings mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONTSMC,TSMC Earnings Mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONTTWO,Take Two Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONUAL,United Airlines Earnings Mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONUBER,uber earnings mention,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONULTA,What will ULTA Beauty say during its earnings call?,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONURBN,Urban Outfitters Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONV,WHAT WILL VISA SAY IN THEIR NEXT EARNINGS CALL,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONVSCO,Victoria Secret,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONVST,Vistra,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONVZ,Verizon,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONWEN,Wendys,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONWFC,Wells Fargo,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONWING,Wingstop,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONWMT,What will Walmart say during their earnings call?,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONYETI,Yeti earnings call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONYOU,What will Clear say on their earnings call?,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONYUM,Yum! Brands,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONZETA,Zeta,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONZM,What Will Zoom Say During Their Earnings Call?,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXEARNINGSMENTIONZS,Zscaler Earnings Call,one_off,quadratic,1,EARNINGSMENTION.pdf,Earnings
+KXECBMENTION,ECB MENTION,one_off,quadratic,1,MENTION.pdf,
+KXELLISONMENTION,What will David Ellison say?,one_off,quadratic,1,MENTION.pdf,Business
+KXELONMENTION,Elon Mention,one_off,quadratic,1,MENTION.pdf,
+KXELSAYEDMENTION,What will Abdul El-Sayed say?,one_off,quadratic,1,MENTION.pdf,Politicians
+KXENTMENTION,Entertainment Mention,custom,quadratic,1,MENTIONS.pdf,Entertainment
+KXEPLMENTION,Premier League Mentions,one_off,quadratic,1,SPORTSMENTION.pdf,Sports
+KXFEDGOVMENTION,Fed Gov Mention,one_off,quadratic,1,MENTION.pdf,
+KXFEDMENTION,Fed mention,custom,quadratic,1,FEDMENTION.pdf,Politicians
+KXFEDMENTIONDURATION,mention duration,one_off,quadratic,1,SPEAKDURATION.pdf,Politicians
+KXFIGHTMENTION,Fight,one_off,quadratic,1,NEWMENTION.pdf,Sports
+KXFIGMENTION,Figma Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXFINKMENTION,Larry Fink Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXFNSMENTION,Fox News Sunday Mention,one_off,quadratic,1,MENTION.pdf,
+KXFOMCTONE,Warsh FOMC tone,one_off,quadratic,1,TOPICSMENTION.pdf,
+KXFOXNEWSMENTION,Fox News,one_off,quadratic,1,MENTION.pdf,Politicians
+KXFOXSATMENTION,Saturday in America Mention,one_off,quadratic,1,MENTION.pdf,
+KXFRANKLINMENTION,Franklin Mention,one_off,quadratic,1,MENTION.pdf,
+KXFREYMENTION,Jacob Frey,one_off,quadratic,1,MENTION.pdf,
+KXFTNMENTION,Face The Nation,one_off,quadratic,1,MENTION.pdf,
+KXFURYMENTION,Tyson Fury Mention,one_off,quadratic,1,MENTION.pdf,Sports
+KXGABBMENTION,Greg Abbott mentions,one_off,quadratic,1,MENTION.pdf,
+KXGAMEDAYMENTION,CFB Gameday,one_off,quadratic,1,MENTION.pdf,
+KXGILLISESPYS,Gillis Espys,one_off,quadratic,1,MENTION.pdf,
+KXGLASERMENTION,Nikki Glaser,one_off,quadratic,1,MENTION.pdf,
+KXGOLDENMENTION,Golden Bachelor Mention,one_off,quadratic,1,MENTION.pdf,
+KXGOOGLMENTION,Google Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXGOVERNORMENTION,Generic Governor,one_off,quadratic,1,MENTION.pdf,
+KXGREENDAYMENTION,WILL GREENDAY SAY MAGA,custom,quadratic,1,MENTION2.pdf,
+KXGRIFFINMENTION,Ken Griffin Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXGUTFELDMENTION,Gutfeld,one_off,quadratic,1,MENTION.pdf,
+KXHANNITYMENTION,Hannity ,one_off,quadratic,1,MENTION.pdf,Politicians
+KXHARTMENTION,Kevin Hart ,one_off,quadratic,1,MENTION.pdf,
+KXHBIDENMENTION,Hunter Biden Mention,one_off,quadratic,1,MENTION.pdf,
+KXHEARINGMENTION,Hearing Mention,one_off,quadratic,1,MENTION.pdf,Politicians
+KXHEGSETHMENTION,Hegseth,one_off,quadratic,1,MENTION.pdf,
+KXHILLARYMENTION,Hillary Clinton Mention,one_off,quadratic,1,MENTION.pdf,Politicians
+KXHILTONMENTION,Steve Hilton Mention,one_off,quadratic,1,MENTION.pdf,
+KXHOCHULMENTION,Kathy Hochul,one_off,quadratic,1,MENTION.pdf,Politicians
+KXHOMANMENTION,Tom Homan,one_off,quadratic,1,MENTION.pdf,
+KXINFANTINOMENTION,Gianni Infantino,one_off,quadratic,1,MENTION.pdf,
+KXINGRAHAMMENTION,The Ingraham Angle,one_off,quadratic,1,MENTION.pdf,
+KXIRANMOU,US x Iran MOU,one_off,quadratic,1,TOPICSMENTION.pdf,
+KXJEFFRIESMENTION,Hakeem Jeffries Mention,one_off,quadratic,1,MENTION.pdf,
+KXJENSENMENTION,Jensen Mention,one_off,quadratic,1,MENTION.pdf,Business;CEOs
+KXJOHNSONMENTION,Mike Johnson Mention,one_off,quadratic,1,MENTION.pdf,
+KXJPOWMENTION,What will Jerome Powell say?,custom,quadratic,1,MENTION.pdf,
+KXKAMALAMENTION,What will Kalmala Harris say on the late show with stephen colbert,one_off,quadratic,1,MENTION.pdf,
+KXKARDASHIANMENTION,Kardashian Mention,one_off,quadratic,1,MENTION.pdf,
+KXKARPMENTION,Alex Karp Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXKHANNAMENTION,Ro Khanna Mention,one_off,quadratic,1,MENTION.pdf,
+KXKIMMELMENTION,Jimmy Kimmel Mention,one_off,quadratic,1,MENTION.pdf,
+KXKINGMENTION,King Mention,one_off,quadratic,1,MENTION.pdf,
+KXKIRKMENTION,What will Erika Kirk say?,one_off,quadratic,1,MENTION.pdf,
+KXKPAXMENTION,Ken Paxton mentions,one_off,quadratic,1,MENTION.pdf,
+KXKXDJTHANNITY,Trump interview with Sean Hannity,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXLAMMYMENTION,David Lammy,one_off,quadratic,1,MENTION.pdf,
+KXLASTWORDCOUNT,Last Word Trump Count,custom,quadratic,1,MENTIONCOUNT.pdf,Politicians
+KXLASTWORDMENTION,Last Word,one_off,quadratic,1,MENTION.pdf,Politicians
+KXLATENIGHTMENTION,Late Night Mention,one_off,quadratic,1,MENTION.pdf,Entertainment
+KXLEAVITTLATE,Karoline Leavitt Late,custom,quadratic,1,EVENTLATE.pdf,Politicians
+KXLEAVITTMENTION,Leavitt mention general,one_off,quadratic,1,MENTION.pdf,
+KXLEAVITTMENTIONDURATION,Leavitt Duration,one_off,quadratic,1,SPEAKDURATION.pdf,Politicians
+KXLEAVITTSMFMENTION,What will Karoline Leavitt say on Sunday Morning Futures?,one_off,quadratic,1,MENTION.pdf,
+KXLEBRONMENTION,Lebron James Mention,one_off,quadratic,1,MENTION.pdf,
+KXLOVEISLMENTION,Love Island Mentions,one_off,quadratic,1,MENTION.pdf,Entertainment
+KXLUCKEYMENTION,What will Palmer Luckey say?,one_off,quadratic,1,MENTION.pdf,Business
+KXLUTNICKFTNMENTION,What will Howard Lutnick say on Face the Nation?,one_off,quadratic,1,MENTION.pdf,
+KXMADDOWMENTION,Rachel Maddow,one_off,quadratic,1,MENTION.pdf,Politicians
+KXMAHERMENTION,Bill Maher Mention,one_off,quadratic,1,MENTION.pdf,
+KXMAMDANIMENTION,What will Zohran Mamdani say? ,one_off,quadratic,1,MENTION.pdf,Politicians
+KXMARMADUNCSDS,What will the commentators say during the UNC vs. San Diego St. game?,one_off,quadratic,1,MENTION.pdf,
+KXMCDMENTION,McDonald's Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXMELANIAMENTION,Melania Mention,one_off,quadratic,1,MENTION.pdf,Politicians
+KXMENTION,What Will Someone Say?,custom,quadratic,1,MENTIONS.pdf,Politicians
+KXMENTIONEARNAIR,AAR Corp Earnings Call,custom,quadratic,1,MENTIONEARN.pdf,Earnings
+KXMENTIONEARNCCL,Carnival Earnings Call,custom,quadratic,1,MENTIONEARN.pdf,Earnings
+KXMENTIONEARNCHWY,Chewy Earnings Call,custom,quadratic,1,MENTIONEARN.pdf,Earnings
+KXMENTIONEARNDAL,Delta Earnings,custom,quadratic,1,MENTIONEARN.pdf,Earnings
+KXMENTIONEARNFDX,FedEx,custom,quadratic,1,MENTIONEARN.pdf,Earnings
+KXMENTIONEARNGIS,General Mills,custom,quadratic,1,MENTIONEARN.pdf,Earnings
+KXMENTIONEARNLULU,Lululemon,custom,quadratic,1,MENTIONEARN.pdf,Earnings
+KXMENTIONEARNM,Macy's,custom,quadratic,1,MENTIONEARN.pdf,Earnings
+KXMENTIONEARNMU,Micron,custom,quadratic,1,MENTIONEARN.pdf,Earnings
+KXMENTIONEARNNKE,Nike Earnings Call,custom,quadratic,1,MENTIONEARN.pdf,Earnings
+KXMENTIONEARNOKLO,Oklo,custom,quadratic,1,MENTIONEARN.pdf,Earnings
+KXMENTIONEARNSFD,Smithfield Foods Earnings,custom,quadratic,1,MENTIONEARN.pdf,Earnings
+KXMENTIONEARNWGO,Winnebago Industries Earnings Call,custom,quadratic,1,MENTIONEARN.pdf,Earnings
+KXMINAJMENTION,Nicki Minaj,one_off,quadratic,1,MENTION.pdf,
+KXMIRANMENTION,Stephen Miran Mention,one_off,quadratic,1,MENTION.pdf,
+KXMLBMENTION,MLB Announcers,one_off,quadratic,1,NEWMENTION.pdf,Sports
+KXMRBEASTMENTION,What Will Mr Beast say in his next video,one_off,quadratic,1,MENTION.pdf,
+KXMRVLMENTION,Marvell Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXMSFTMENTION,Microsoft Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXMTGMENTION,MTG,one_off,quadratic,1,MENTION.pdf,
+KXMTPMENTION,Meet The Press,one_off,quadratic,1,MENTION.pdf,
+KXMVEMENTIONSINGLE,MVE Mention,custom,quadratic,1,MENTIONCOMBO.pdf,
+KXMVEMENTIONSSINGLE,MVE Mention,custom,quadratic,1,MENTIONCOMBO.pdf,
+KXNADALMENTION,Nadal Mention,one_off,quadratic,1,MENTION.pdf,
+KXNADELLAMENTION,What will Satya Nadella say?,one_off,quadratic,1,MENTION.pdf,Business
+KXNASCARMENTION,Nascar announcers,one_off,quadratic,1,SPORTSMENTION.pdf,Sports
+KXNBAFINALSMENTION,NBA Finals,one_off,quadratic,1,MENTION.pdf,
+KXNBAMENTION,NBA Mention,one_off,quadratic,1,NEWMENTION.pdf,Sports
+KXNCAABMENTION,College Basketball,one_off,quadratic,1,NEWMENTION.pdf,Sports
+KXNCAAMENTION,NCAA Mention,one_off,quadratic,1,SPORTSMENTION.pdf,Sports
+KXNETANYAHUMENTION,Netanyahu Mention,one_off,quadratic,1,MENTION.pdf,Politicians
+KXNEWSNATIONMENTION,News Nation,one_off,quadratic,1,MENTION.pdf,
+KXNEWSOMMENTION,Gavin Newsom Mention,one_off,quadratic,1,MENTION.pdf,
+KXNFLMENTION,NFL Mention,one_off,quadratic,1,SPORTSMENTION.pdf,Sports
+KXNHLMENTION,NHL Announcer Mentions,one_off,quadratic,1,NEWMENTION.pdf,Sports
+KXNVDAMENTION,NVIDIA Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXNYCMAYORDEBATEMENTION,NYC Mayoral Debate,one_off,quadratic,1,MENTION.pdf,
+KXNYCMDEBMENTION,NYC Mayor debate,one_off,quadratic,1,MENTION.pdf,
+KXOBAMAMENTION,Obama Mention,one_off,quadratic,1,MENTION.pdf,Politicians
+KXPAULMENTION,Jake Paul,one_off,quadratic,1,MENTION.pdf,
+KXPEARLMANMENTION,Oz Pearlman Mention,one_off,quadratic,1,MENTION.pdf,
+KXPELOSIMENTION,Nancy Pelosi Mention,one_off,quadratic,1,MENTION.pdf,
+KXPERSONMENTION,General,one_off,quadratic,1,MENTION.pdf,
+KXPOLITICSMENTION,General Politics,one_off,quadratic,1,MENTION.pdf,
+KXPORTERMENTION,Katie Porter Mention,one_off,quadratic,1,MENTION.pdf,
+KXPORTNOYMENTION,What will Dave Portnoy say on DDTG?,one_off,quadratic,1,MENTION.pdf,Business
+KXPOWELLMENTION,Powell Mention General ,one_off,quadratic,1,MENTION.pdf,
+KXPRESMENTION,President Mention,custom,quadratic,1,PRESMENTION.pdf,Politicians
+KXPSAKIMENTION,Jen Psaki Mention,one_off,quadratic,1,MENTION.pdf,Politicians
+KXRDDTMENTION,Reddit Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXREEVESMENTION,Keanu Reeves Mention,one_off,quadratic,1,MENTION.pdf,
+KXRFKMENTION,RFK Mentions,one_off,quadratic,1,MENTION.pdf,
+KXROGANMENTION,Joe Rogan Mention,one_off,quadratic,1,MENTION.pdf,
+KXRUBIOMENTION,Marco Rubio,one_off,quadratic,1,MENTION.pdf,
+KXSASMITH,Stephen A Smith Mention,one_off,quadratic,1,MENTION.pdf,
+KXSCHUMERMENTION,Schumer Mention,one_off,quadratic,1,MENTION.pdf,
+KXSCOTUSMENTION,SCOTUS Mention,one_off,quadratic,1,MENTION.pdf,
+KXSECPRESSMENTION,Sec Press mentions,custom,quadratic,1,SECPRESSMENTION.pdf,Politicians
+KXSHAQMENTION,Shaq Mention,one_off,quadratic,1,MENTION.pdf,
+KXSHIRLEYMENTION,Nick Shirley,one_off,quadratic,1,MENTION.pdf,
+KXSNFMENTION,Sunday Night Football Mention,one_off,quadratic,1,MENTION.pdf,
+KXSNLMENTION,SNL Mention,one_off,quadratic,1,MENTION.pdf,
+KXSNOOPMENTION,Snoop Dogg,one_off,quadratic,1,MENTION.pdf,
+KXSOUTHPARKMENTION,South Park Mention,one_off,quadratic,1,MENTION.pdf,
+KXSPANBERGERMENTION,Spanberger,one_off,quadratic,1,MENTION.pdf,
+KXSPCXMENTION,SpaceX Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXSPECIALREPORTMENTION,Special Report,one_off,quadratic,1,MENTION.pdf,
+KXSPOTMENTION,Spotify Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXSTARMERMENTION,Starmer mentions,custom,quadratic,1,STARMERMENTION.pdf,Politicians
+KXSTARMERMENTIONB,Kier Starmer,one_off,quadratic,1,MENTION.pdf,
+KXSTEYERMENTION,Tom Steyer Mention,one_off,quadratic,1,MENTION.pdf,
+KXSTUBBMENTION,Alexander Stubb mention,one_off,quadratic,1,MENTION.pdf,
+KXSURVIVORMENTION,Survivor Mention,one_off,quadratic,1,MENTION.pdf,
+KXSWIFTMENTION,What will Taylor Swfit say ,one_off,quadratic,1,MENTION.pdf,
+KXTALARICOMENTION,James Talarico,one_off,quadratic,1,MENTION.pdf,
+KXTBLAMENTION,Todd Blanche mentions,one_off,quadratic,1,MENTION.pdf,
+KXTBPNMENTION,TBPN Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXTCRUMENTION,Ted Cruz mentions,one_off,quadratic,1,MENTION.pdf,
+KXTHEBEAT,The Beat with Ari Melber,one_off,quadratic,1,MENTION.pdf,
+KXTHEWEEKNIGHTMENTION,Weeknight,one_off,quadratic,1,MENTION.pdf,Politicians
+KXTHREADGUYMENTION,Threadguy Mention,one_off,quadratic,1,MENTION.pdf,
+KXTNFMENTION,TNF Mention,one_off,quadratic,1,MENTION.pdf,
+KXTRUMPLATE,Trump Late,custom,quadratic,1,EVENTLATE.pdf,Politicians
+KXTRUMPMENTION,What will Trump say?,one_off,quadratic,1,MENTION.pdf,Trump;Politicians
+KXTRUMPMENTIONB,Trump Mention B,one_off,quadratic,1,MENTION.pdf,Trump;Politicians
+KXTRUMPMENTIONDURATION,How Long Will Trump Speak,one_off,quadratic,1,SPEAKDURATION.pdf,Trump;SOTU;Politicians
+KXTRUMPMENTIONS,Trump Mentions,custom,quadratic,1,TRUMPMENTIONS.pdf,Politicians
+KXTRUMPSAY,What will trump say,one_off,quadratic,1,TRUMPSAY.pdf,Trump;Politicians
+KXTRUMPSAYCOMPANY,Will Trump mention company,one_off,quadratic,1,TRUMPSAY.pdf,Trump;Politicians
+KXTRUMPSAYCOUNTRY,Will Trump mention country,one_off,quadratic,1,TRUMPSAY.pdf,Trump;Politicians
+KXTRUMPSAYEP,TRUMPSAY,one_off,quadratic,1,TRUMPSAY.pdf,Trump;Politicians
+KXTRUMPSAYMAM,Mamdani mention,one_off,quadratic,1,TRUMPSAY.pdf,Trump;Politicians
+KXTRUMPSAYMONTH,Trump Monthly,one_off,quadratic,1,TRUMPSAY.pdf,Trump;Politicians
+KXTRUMPSAYNICKNAME,Trump Nickname,one_off,quadratic,1,TRUMPSAY.pdf,Trump;Politicians
+KXTRUMPSAYSCAM,Trump scam altman,one_off,quadratic,1,TRUMPSAY.pdf,Trump;Politicians
+KXTRUMPSAYTRUMP,Trump saying Trump,one_off,quadratic,1,TRUMPSAY.pdf,Trump;Politicians
+KXTRUMPTOPIC,Trump Topic Mention,one_off,quadratic,1,TOPICSMENTION.pdf,
+KXTRUMPZELENSKYY,What will Trump say with Zelenskyy?,custom,quadratic,1,TRUMPMENTION.pdf,Politicians
+KXTSLAMENTION,Tesla Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXUBERMENTION,Uber Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXUEFAMENTION,UEFA Champions League Mentions,one_off,quadratic,1,SPORTSMENTION.pdf,Sports
+KXUNMENTION,UN ,one_off,quadratic,1,MENTION.pdf,
+KXVANCEMENTION,Vance Says,one_off,quadratic,1,MENTION.pdf,Politicians
+KXVIEWMENTION,The View Mention,one_off,quadratic,1,MENTION.pdf,
+KXVLADTENEVMENTION,What will vlad tenev say,one_off,quadratic,1,MENTION.pdf,Business
+KXVZMENTION,Verizon Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXWALESMENTION,Jimmy Wales,one_off,quadratic,1,MENTION.pdf,Business
+KXWALLERMENTION,Waller Mention,one_off,quadratic,1,MENTION.pdf,
+KXWALZMENTION,Tim Walz,one_off,quadratic,1,MENTION.pdf,
+KXWARSHMENTION,Kevin Warsh Mention,one_off,quadratic,1,MENTION.pdf,
+KXWATTERSMENTION,Jesse Watters Primetime,one_off,quadratic,1,MENTION.pdf,
+KXWBCMENTION,WBC,one_off,quadratic,1,SPORTSMENTION.pdf,Sports
+KXWCMENTION,World Cup Mentions,one_off,quadratic,1,NEWMENTION.pdf,Sports
+KXWDAYMENTION,Workday Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXWEFMENTION,WEF,one_off,quadratic,1,MENTION.pdf,Business
+KXWMTMENTION,Walmart Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXWNBAMENTION,WNBA Mentions,one_off,quadratic,1,NEWMENTION.pdf,Sports
+KXWOMENTION,Winter Olympics,one_off,quadratic,1,MENTION.pdf,Sports
+KXWORLDNEWSMENTION,World News Mention,one_off,quadratic,1,MENTION.pdf,
+KXWWDCMENTION,WWDC,one_off,quadratic,1,MENTION.pdf,Business
+KXZACHARIAMENTION,What will Katie Zacharia say?,one_off,quadratic,1,MENTION.pdf,
+KXZAKARIAMENTION,Fareed Zakaria,one_off,quadratic,1,MENTION.pdf,
+KXZELENSKYYMENTION,Zelenskyy Mention,one_off,quadratic,1,MENTION.pdf,
+KXZIWEMENTION,Ziwe,one_off,quadratic,1,MENTION.pdf,
+KXZMMENTION,Zoom Mention,one_off,quadratic,1,MENTION.pdf,Business
+KXZUCKMENTION,What will Zuck say?,one_off,quadratic,1,MENTION.pdf,Business

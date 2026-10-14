@@ -1,0 +1,98 @@
+[
+ {
+  "ticker": "KXTRUMPMENTION-26OCT14-CEAS",
+  "event_ticker": "KXTRUMPMENTION-26OCT14",
+  "title": "What will Donald Trump say during Midterm Rally in Bullhead City, Arizona originally scheduled for October 14, 2026?",
+  "custom_strike": {
+   "Word": "Ceasefire"
+  },
+  "open_time": "2026-10-13T02:45:00Z",
+  "close_time": "2026-10-14T22:24:31Z",
+  "can_close_early": true,
+  "early_close_condition": "This market will close and expire early if the event occurs.",
+  "rules_primary": "If \n Donald Trump says Ceasefire as part of Midterm Rally in Bullhead City, Arizona originally scheduled for October 14, 2026\n, then the market resolves to Yes.",
+  "rules_secondary": "How this is resolved\nVideo of the Midterm Rally in Bullhead City, Arizona originally scheduled for October 14, 2026 using the live broadcast or stream.\nIf a consensus by Kalshi employees cannot be reached using video, internal & external (official) transcripts of the Midterm Rally in Bullhead City, Arizona originally scheduled for October 14, 2026 will be used.\n\nPayout Criteria\nThe exact phrase/word, or a plural or possessive form of the phrase/word. \nPlural nouns occurring within proper nouns and noun phrases (e.g. names, titles, etc).\nDonald Trump speaking in an official capacity.\nFor phrases with slashes like \"Doge/Dogecoin,\" either word satisfies the criterion.\n\nDoesn't count for payout\nGrammatical/tense inflections are otherwise not included. \nPresence alone during a livestream is not sufficient for the market to qualify (e.g., inaudible private conversations on camera, unofficial statements picked up on a hot mic).\nExcept as otherwise specified, previously aired content, archival footage, and recordings captured at times, places, or events wholly separate from the featured address.\n\nPayout for cancellations and delays\nIf an event is definitively cancelled or the event fails to qualify under the Payout Criterion, or any other circumstance prevents normal resolution, then the market for \"Event does not qualify\" resolves to Yes and all other markets will resolve to No.  \nIf the event is postponed, and such a postponement is announced by the end of the following calendar day to be rescheduled to a time within 14 calendar days, the markets shall remain open.",
+  "fetched_utc": "2026-10-14T23:29:21Z",
+  "source": "GET /trade-api/v2/markets?series_ticker=KXTRUMPMENTION&status=settled (or /historical/markets)"
+ },
+ {
+  "ticker": "KXTRUMPSAY-26OCT19-AUTO",
+  "event_ticker": "KXTRUMPSAY-26OCT19",
+  "title": "Will Trump say \"Autopen / Auto Pen\" before Oct 19, 2026?",
+  "custom_strike": {
+   "Word": "Autopen / Auto Pen"
+  },
+  "open_time": "2026-10-12T18:15:00Z",
+  "close_time": "2026-10-14T15:16:45Z",
+  "can_close_early": true,
+  "early_close_condition": "This market will close and expire early if the specified word or phrase is stated by President Trump.",
+  "rules_primary": "If Autopen / Auto Pen, or a plural or possessive form of Autopen / Auto Pen, is stated by Donald Trump before Oct 19, 2026 at 12:00am ET, then the market resolves to Yes.",
+  "rules_secondary": "Payout criteria\nThe word or phrase must be stated by President Donald Trump in public statements, direct quotes published by Source Agencies, or written public statements on his personal social media accounts (Twitter/Truth Social).\nThe exact phrase/word, or a plural or possessive form of the phrase/word, must be used.\nFor phrases with slashes like \"Doge/Dogecoin,\" either word satisfies the criterion.\n\nDoesn't count for payout\n Official acts like Executive Orders or bills signed do not count. \n Grammatical/tense inflections.",
+  "fetched_utc": "2026-10-14T23:29:55Z",
+  "source": "GET /trade-api/v2/markets?series_ticker=KXTRUMPSAY&status=settled (or /historical/markets)"
+ },
+ {
+  "ticker": "KXSECPRESSMENTION-26OCT27-AFFO",
+  "event_ticker": "KXSECPRESSMENTION-26OCT27",
+  "title": "Will the White House Press Secretary say Afford / Affordable / Affordability at her next press briefing?",
+  "custom_strike": {
+   "Word": "Afford / Affordable / Affordability"
+  },
+  "open_time": "2026-10-12T21:30:00Z",
+  "close_time": "2026-10-13T14:26:41Z",
+  "can_close_early": true,
+  "early_close_condition": "This market will close and expire early if the event occurs.",
+  "rules_primary": "If the White House Press Secretary says Afford / Affordable / Affordability at the next Press Briefing by the White House Press Secretary (does not include gaggles), then the market resolves to Yes.",
+  "rules_secondary": "Video of the next Press Briefing by the White House Press Secretary (does not include gaggles) will be primarily used to resolve the market; if a consensus by Kalshi employees cannot be reached using video, internal & external (official) transcripts of the next Press Briefing by the White House Press Secretary (does not include gaggles) will be used.\n\nPayout Criterion: \nThe exact phrase/word, or a plural or possessive form of the phrase/word, must be used. Grammatical/tense inflections are otherwise not included. \nPlural nouns occurring within proper nouns and noun phrases (e.g. names, titles, etc) are included.\nFor the purpose of this market, the live broadcast or stream will be used to resolve this event. \nThe event must be opened to the press for a live televised or streamed event to qualify.\nThe event will resolve based on White House Press Secretary speaking in an official capacity. If White House Press Secretary is or is not present during a livestream, and does not speak in an official capacity the market will not qualify (e.g., inaudible private conversations on camera, unofficial statements picked up on a hot mic).\nExcept as otherwise specified, previously aired content, archival footage, and recordings captured at times, places, or events wholly separate from the featured address will not count.\nPlease see full rules for more details.",
+  "fetched_utc": "2026-10-14T23:29:45Z",
+  "source": "GET /trade-api/v2/markets?series_ticker=KXSECPRESSMENTION&status=settled (or /historical/markets)"
+ },
+ {
+  "ticker": "KXFEDMENTION-26SEP-GAS",
+  "event_ticker": "KXFEDMENTION-26SEP",
+  "title": "Will Kevin Warsh say Gas / Gasoline / Natural Gas at his Sep 2026 press conference?",
+  "custom_strike": {
+   "Word": "Gas / Gasoline / Natural Gas"
+  },
+  "open_time": "2026-07-30T22:46:00Z",
+  "close_time": "2026-09-16T20:02:04Z",
+  "can_close_early": true,
+  "early_close_condition": "This market will close and expire early if the event occurs.",
+  "rules_primary": "If the Chair of the Federal Reserve says Gas / Gasoline / Natural Gas at his Sep 2026 post-FOMC meeting introductory remarks and Q+A, then the market resolves to Yes.",
+  "rules_secondary": "Video of the Sep 2026 post-FOMC meeting introductory remarks and Q+A will be primarily used to resolve the market; if a consensus by Kalshi employees cannot be reached using video, internal & external (official) transcripts of the Sep 2026 post-FOMC meeting introductory remarks and Q+A will be used. The exact phrase/word, or a plural or possessive form of the phrase/word, must be used. Grammatical/tense inflections are otherwise not included. Please see full rules for more details.",
+  "fetched_utc": "2026-10-14T23:29:50Z",
+  "source": "GET /trade-api/v2/markets?series_ticker=KXFEDMENTION&status=settled (or /historical/markets)"
+ },
+ {
+  "ticker": "KXEARNINGSMENTIONNVDA-26AUG26-ARIZ",
+  "event_ticker": "KXEARNINGSMENTIONNVDA-26AUG26",
+  "title": "What will NVIDIA Corporation say during their next earnings call?",
+  "custom_strike": {
+   "Word": "Arizona"
+  },
+  "open_time": "2026-07-24T22:51:00Z",
+  "close_time": "2026-08-27T00:20:52Z",
+  "can_close_early": true,
+  "early_close_condition": "This market will close and expire early if the event occurs.",
+  "rules_primary": "If Arizona is said by any NVIDIA Corporation representative (including the operator of the call) during the next NVIDIA Corporation earnings call (including the Q+A), then the market resolves to Yes.",
+  "rules_secondary": "Video of the NVIDIA Corporation earnings call will be primarily used to resolve the market; if a consensus by Kalshi employees cannot be reached using video, transcripts of the NVIDIA Corporation earnings call will be used according to the news publications listed in the contract. The exact phrase/word, or a plural or possessive form of the phrase/word, must be used. Grammatical/tense inflections are otherwise not included. Please see full rules for more details.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the underlying company. All trademarks, logos, and brand names are the property of their respective owners.",
+  "fetched_utc": "2026-10-14T23:29:59Z",
+  "source": "GET /trade-api/v2/markets?series_ticker=KXEARNINGSMENTIONNVDA&status=settled (or /historical/markets)"
+ },
+ {
+  "ticker": "KXNFLMENTION-DRAFT-BAD",
+  "event_ticker": "KXNFLMENTION-DRAFT",
+  "title": "What will the announcers say during 2026 NFL Draft (Round 1)?",
+  "custom_strike": {
+   "Word": "Bad Bunny"
+  },
+  "open_time": "2026-04-23T19:00:00Z",
+  "close_time": "2026-04-24T14:40:35Z",
+  "can_close_early": true,
+  "early_close_condition": "This market will close and expire early if the event occurs.",
+  "rules_primary": "If \nMike Greenberg or Mel Kiper Jr. or Booger McFarland or Louis Riddick or Laura Rutledge or Adam Schefter says Bad Bunny as part of 2026 NFL Draft (Round 1)\n, then the market resolves to Yes.",
+  "rules_secondary": "Video of the 2026 NFL Draft (Round 1) originally scheduled for Apr 23, 2026 will be primarily used to resolve the market; if a consensus by Kalshi employees cannot be reached using video, internal & external (official) transcripts of the 2026 NFL Draft (Round 1) originally scheduled for Apr 23, 2026 will be used.\n\nPayout Criterion: \nThe exact phrase/word, or a plural or possessive form of the phrase/word, must be used. Grammatical/tense inflections are otherwise not included. \nCommentary will count at the start of the broadcast and end at the conclusion of the 1st round.\nPromotional content aired during the event will count, but advertisements will not. \nExcept as otherwise specified, previously aired content, archival footage, and recordings captured at times, places, or events wholly separate from the featured address will not count.\nPlease see full rules for more details.\n\nEvent does not qualify:\nIf an event is definitively cancelled or the event fails to qualify under the Payout Criterion, or any other circumstance prevents normal resolution, then the market for \"Event does not qualify\" resolves to Yes and all other markets will resolve to No.  \n\nPostponement:\nIf the event is postponed, and such a postponement is announced by the end of the following calendar day to be rescheduled to a time within 14 calendar days, the markets shall remain open.",
+  "fetched_utc": "2026-10-14T23:30:02Z",
+  "source": "GET /trade-api/v2/markets?series_ticker=KXNFLMENTION&status=settled (or /historical/markets)"
+ }
+]
