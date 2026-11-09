@@ -90,8 +90,8 @@ def collect_transcripts(conn: sqlite3.Connection, speaker: str = "trump", since:
                      (r["url"], r["date"], r["start_utc"], doc["title"], len(doc["segments"]), len(trump),
                       sum(max(0, _secs(s[2]) - _secs(s[1])) for s in trump), rel, status, doc["fetched_utc"]))
         stats[status] += 1
+        conn.commit()
         if i % 25 == 0:
-            conn.commit()
             print(f"{i}/{len(rows)} {r['date']} {status}", flush=True)
     conn.commit()
     return stats

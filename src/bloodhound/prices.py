@@ -89,8 +89,8 @@ def collect_prices(conn: sqlite3.Connection, api: KalshiPublic, series: str | No
             _store(conn, r["ticker"], r["t_ref_utc"], c, _iso(start), "historical")
             done["historical"] += 1
             done["no_candle"] += c is None
+            conn.commit()  # short write transactions: the transcript batch shares the DB
             if i % 50 == 0:
-                conn.commit()
                 print(f"{i}/{len(todo)} {r['ticker']}", flush=True)
         else:
             batch.setdefault(r["event_ticker"], []).append(r)

@@ -13,3 +13,5 @@ data/cache/
 data/bloodhound.db
 *.egg-info/
 *.db-journal
+*.db-wal
+*.db-shm
