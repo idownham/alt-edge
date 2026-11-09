@@ -192,3 +192,31 @@ def count_matches(spec: str, text: str) -> int:
 
 def said(spec: str, text: str) -> bool:
     return count_matches(spec, text) > 0
+
+
+def token_index(tokens: list[str]) -> dict[str, list[int]]:
+    """token -> sorted positions; build once per transcript, then use count_matches_indexed."""
+    idx: dict[str, list[int]] = {}
+    for i, t in enumerate(tokens):
+        idx.setdefault(t, []).append(i)
+    return idx
+
+
+def count_matches_indexed(spec: str, tokens: list[str], index: dict[str, list[int]]) -> int:
+    """Same result as count_matches(spec, text) when tokens = tokenize(text) (tested), but only checks
+    positions where the first token of a variant occurs."""
+    n = 0
+    spec_tokens = set(tokenize(spec))
+    target_is_unit = bool(spec_tokens) and spec_tokens <= UNITS
+    for variant in _alternatives(spec):
+        L = len(variant)
+        starts = sorted({p for t in variant[0] for p in index.get(t, ())})
+        free = 0
+        for i in starts:
+            if i < free or i > len(tokens) - L:
+                continue
+            if all(tokens[i + k] in variant[k] for k in range(L)) and \
+                    _number_context_ok(tokens, i, i + L, L, target_is_unit):
+                n += 1
+                free = i + L
+    return n

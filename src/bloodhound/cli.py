@@ -59,6 +59,32 @@ def cmd_collect_transcripts(args):
     print(json.dumps(stats))
 
 
+def cmd_collect_milestones(args):
+    from .milestones import collect_milestones
+    conn = db.connect(args.db)
+    api = KalshiPublic()
+    started = utc_now_iso()
+    stats = collect_milestones(conn, api)
+    _log_run(conn, "collect-milestones", started, api.client.requests_made, json.dumps(stats))
+    print(json.dumps(stats))
+
+
+def cmd_tune_dev(args):
+    """Dev-only tuning + dev backtest report. Reads dev outcomes only."""
+    from pathlib import Path
+    from .backtest import tune_dev, write_report
+    from .model import load_corpus
+    conn = db.connect(args.db)
+    docs = load_corpus(conn)
+    res = tune_dev(conn, docs, gap_days=args.gap_days)
+    res["generated_utc"] = utc_now_iso()
+    res["n_docs"] = len(docs)
+    out = Path(args.out)
+    write_report(res, out.with_suffix(".md"), out.with_suffix(".json"))
+    _log_run(conn, "tune-dev", res["generated_utc"], 0, f"gap_days={args.gap_days} -> {out.name}")
+    print(out.with_suffix(".md").read_text())
+
+
 def cmd_status(args):
     from .status import status
     print(status(db.connect(args.db)))
@@ -87,6 +113,11 @@ def main(argv=None):
     t.add_argument("--since", default="2024-01-01")
     t.add_argument("--limit", type=int, default=None)
     t.set_defaults(fn=cmd_collect_transcripts)
+    sub.add_parser("collect-milestones").set_defaults(fn=cmd_collect_milestones)
+    d = sub.add_parser("tune-dev", help="dev-only tuning and dev backtest report")
+    d.add_argument("--gap-days", type=int, default=1)
+    d.add_argument("--out", default=str(db.ROOT / "docs" / "results" / "dev-backtest"))
+    d.set_defaults(fn=cmd_tune_dev)
     sub.add_parser("status").set_defaults(fn=cmd_status)
     args = p.parse_args(argv)
     args.fn(args)

@@ -167,3 +167,48 @@ outcomes or close times.
 **Next (M2, Nov 12–15):** Vance source search (#3b); event-type keyword rules (logged as an AI input); base-rate
 model v1 on **dev only**, with the look-ahead guard (transcript date < event date); reliability on dev; tuning;
 freeze Nov 16 → ask Ian before scoring the test set.
+
+---
+
+## 2026-11-09 (later) — S1 M2 started early: Vance source, event types, base-rate model v1 on dev only
+
+**Work** (Ian: "Start M2"): Kalshi milestones collector (`collect-milestones`), event-type keyword rules
+(`event_types.py`), base-rate model v1 (`model.py`), dev-only tuning and backtest (`backtest.py`, `bloodhound tune-dev`),
+a faster matcher that gives the same results (`count_matches_indexed`), and 79 new tests (`tests/test_model.py`):
+175 pass + 5 expected failures. Reports: `docs/results/dev-backtest-2026-11-09.md` (and `-gap2`). **Only dev outcomes
+were read** (`db.outcomes("dev")`); test and locked stay locked.
+
+**Vance (#3b):** Kalshi's own `/milestones` give start times for 37/39 dev and 32/32 test Vance events, and on Trump
+dev events they match Factbase closely (median 0 min). But no Vance **transcript** list exists on Factbase, so there's no
+base rate. Recommendation: drop Vance for S1 per Q3a (`docs/evidence/s1-2026-11-09/vance_source.md`).
+
+**Model v1:** P(word) = share of the last N earlier comparable transcripts containing the word (with the market's
+"3+ times" threshold), shrunk to a prior mean m with strength s. Look-ahead guard: only transcripts dated before the
+event's ET date (asserted in code and tests). Dev split by event date: **dev-A** (first 57 events, 1,145 markets)
+picks the parameters from a 270-combination grid (pool, N, min speech length, s); **dev-B** (last 57 events, 1,438
+markets) checks them. A second candidate, the **blend**, is a logistic fit on dev-A of logit(p_mkt) and logit(p_base).
+
+| dev-B (not used for fitting) | Brier model | Brier market | model − market [95% CI] |
+|---|---|---|---|
+| base rate alone (all events, last 5, ≥ 15 min speech, s = 8) | 0.2302 | 0.1609 | +0.069 [+0.054, +0.085] |
+| blend (market + base rate) | 0.1614 | 0.1609 | +0.0004 [−0.002, +0.003] |
+
+Same picture with a 2-day transcript gap (in case transcripts post late): +0.073 and +0.0012.
+
+**⭐ Evidence → decision → consequence:** the base rate alone lost badly on dev (evidence). Claude checked for a bug
+before accepting it: the raw hit rate rises steadily with the outcome (YES 25% when the word was in none of the last 20
+transcripts → 69% when in most), but ranks markets much less well than the price (AUC 0.68 vs 0.84). The grid
+picks heavy shrinkage. So it's a weak real signal, not a broken matcher. Words Kalshi picks are often topical
+to the event ("Artemis" at an Artemis event), which past speeches can't see but the market can (decision: report it
+as is; offer a market+base-rate blend as the alternative freeze candidate) → the plan as written (base rate alone)
+would almost surely hit the STOP rule on test; the blend ties the market on dev-B (consequence: the freeze choice is
+Ian's, below).
+
+**AI use + Ian's judgment:**
+- Claude (Opus 5.5) wrote the event-type rules (logged in `docs/evidence/s1-2026-11-09/ai_inputs.jsonl`), the model,
+  the tuning grid, the dev-A/dev-B split, the blend idea and this entry. **Ian's verdict:** pending on the event-type
+  rules, on dropping Vance, and on which candidate to freeze.
+
+**Next:** Ian picks the freeze candidate (blend or base alone; optionally one more pre-declared dev-only feature,
+e.g. "word appears in the event title", tried Nov 12–15). Freeze Nov 16 with the hash in `decisions.md` → Ian's OK →
+test scored once.

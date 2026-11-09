@@ -183,6 +183,10 @@ markets is very realistic. ≥ 30 test events is realistic.** Event titles are m
   base rates, not to the outcomes, which come from the API.
 - **Data endpoints can change.** The historical cutoff moves forward over time. Pull and store once.
 
+## S1 addendum (2026-11-09): Vance sources
+Start times: Kalshi `/milestones` cover 37/39 dev and 32/32 test Vance events and match Factbase on Trump dev events
+(median 0 min). Transcripts: no Vance listing on Factbase. Details: `evidence/s1-2026-11-09/vance_source.md`.
+
 ## Sources
 
 - Kalshi API (public, no auth), `https://api.elections.kalshi.com/trade-api/v2`: `/series?category=Mentions`,
