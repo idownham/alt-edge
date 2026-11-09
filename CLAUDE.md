@@ -6,10 +6,12 @@ live updating) produces better-calibrated probabilities than the market price �
 Owner: Ian Downham (GitHub: idownham). Shared portfolio rules: `../CLAUDE.md` (alt-hq).
 
 ## Current stage
-**S0 — research + lock the criteria (started early 2026-10-14, see `docs/decisions.md`).** Read-only desk research
-only; no continuously running collectors until a slot opens (Coin Toss recording done ~Oct 22, or Osprey Decision A
-= STOP). Findings: `docs/s0-research.md`. Criteria v2 in `docs/spec.md` **confirmed by Ian 2026-10-14** (Trump primary, Vance secondary); S1 plan:
-`docs/s1-plan.md`, starts on Ian's go. Update this
+**S1 — data pipeline + first predictor (started 2026-11-09, Ian's go; dates in `docs/decisions.md`).** M1 (pipeline,
+rule-aware matcher, scoring code, counts only) Nov 9–12 → M2 (transcripts, base-rate v1 on **dev only**, tuning,
+Vance source) Nov 12–15 → **freeze Nov 16** → test set scored **once** after Ian's OK. Test and post-Oct-14 ("locked")
+outcomes are refused by `db.outcomes()` unless `--score-test` + the frozen hash. Criteria v2 (`docs/spec.md`, confirmed
+2026-10-14) unchanged. All collection is hand-run, paced batches (`bloodhound collect-*`); nothing runs continuously;
+`bloodhound status` reports counts. Plan: `docs/s1-plan.md`. S0 findings: `docs/s0-research.md`. Update this
 line when the stage changes.
 
 ## Hard rules
@@ -24,7 +26,8 @@ line when the stage changes.
 6. Money as Decimal or integer cents. Secrets only in `.env`.
 
 ## Conventions
-- Python 3.11+, `pyproject.toml`, `.venv/`, `pytest`. Small, focused commits.
+- Python 3.11+, `pyproject.toml`, `.venv/` (`pip install -e '.[dev]'`), `pytest`. Small, focused commits. Stdlib only;
+  HTTP goes through `curl` (python.org's macOS build has no CA bundle). Data in `data/` (DB + caches gitignored).
 - `docs/journal.md` entry every session (work, evidence, observation, decision, AI use + Ian's judgment);
   `docs/decisions.md` for dated owner decisions.
 - A `status` command is required once anything runs continuously (HQ's `/health` calls it).

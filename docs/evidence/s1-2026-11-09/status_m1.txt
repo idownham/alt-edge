@@ -1,0 +1,19 @@
+Project Bloodhound status (read-only batches; nothing runs continuously)
+  markets        9297
+  events          341
+  schedule       6682
+  event_map       341
+  ref_prices     5314
+Universe after spec-v2 filters (counts only; no outcomes read):
+  KXTRUMPMENTION  dev    all: 156 ev / 4070 mkts | word: 156 ev / 4032 mkts | scheduled: 120 ev / 3060 mkts | priced: 120 ev / 3060 mkts | two_sided: 114 ev / 2893 mkts | spread_ok: 114 ev / 2583 mkts
+  KXTRUMPMENTION  locked all: 18 ev / 675 mkts | word: 18 ev / 657 mkts | scheduled: 11 ev / 418 mkts | priced: 11 ev / 418 mkts | two_sided: 11 ev / 404 mkts | spread_ok: 11 ev / 403 mkts
+  KXTRUMPMENTION  test   all: 84 ev / 2615 mkts | word: 84 ev / 2533 mkts | scheduled: 62 ev / 1836 mkts | priced: 62 ev / 1836 mkts | two_sided: 60 ev / 1735 mkts | spread_ok: 60 ev / 1640 mkts
+  KXVANCEMENTION  dev    all: 39 ev / 883 mkts | word: 39 ev / 865 mkts | scheduled: 0 ev / 0 mkts | priced: 0 ev / 0 mkts | two_sided: 0 ev / 0 mkts | spread_ok: 0 ev / 0 mkts
+  KXVANCEMENTION  locked all: 12 ev / 308 mkts | word: 12 ev / 296 mkts | scheduled: 0 ev / 0 mkts | priced: 0 ev / 0 mkts | two_sided: 0 ev / 0 mkts | spread_ok: 0 ev / 0 mkts
+  KXVANCEMENTION  test   all: 32 ev / 746 mkts | word: 32 ev / 714 mkts | scheduled: 0 ev / 0 mkts | priced: 0 ev / 0 mkts | two_sided: 0 ev / 0 mkts | spread_ok: 0 ev / 0 mkts
+Last runs:
+  2026-11-09T14:51:02Z collect-prices    requests=49 {"historical": 0, "batch": 837, "no_candle": 4}
+  2026-11-09T14:18:05Z collect-transcripts requests=1252 {"ok": 1210, "http_404": 2, "no_segments": 40}
+  2026-11-09T13:36:01Z collect-transcripts requests=3 {"ok": 3, "http_404": 0, "no_segments": 0}
+  2026-11-09T13:35:12Z collect-schedule  requests=14 trump 2024-01..2025-02: 354 entries
+  2026-11-09T13:30:39Z collect-prices    requests=6 {"historical": 5, "batch": 0, "no_candle": 0}

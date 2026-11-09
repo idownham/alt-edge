@@ -76,7 +76,7 @@ def main(argv=None):
     s.add_argument("--refresh-last", action="store_true", help="re-fetch the newest month (still changing)")
     s.set_defaults(fn=cmd_collect_schedule)
     m = sub.add_parser("map-events")
-    m.add_argument("--csv", default=str(db.ROOT / "data" / "event_map.csv"))
+    m.add_argument("--csv", default=str(db.ROOT / "docs" / "evidence" / "s1-2026-11-09" / "event_map.csv"))
     m.set_defaults(fn=cmd_map_events)
     c = sub.add_parser("collect-prices")
     c.add_argument("--series", default=None)

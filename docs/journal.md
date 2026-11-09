@@ -90,3 +90,80 @@ in `CLAUDE.md` is updated.
 **⭐ Evidence → decision → consequence:** the S0 finding (markets close early, so the closing price contains the
 answer) → Ian confirmed the pre-event benchmark (Q1) → the gate now compares against a price from before the event,
 and S1 has to build a schedule-to-event mapping (Factbase start times) as a required step.
+
+---
+
+## 2026-11-09 — S1 started; Milestone 1 (pipeline, matcher, scoring code) done, counts only
+
+**Decision first (Ian, recorded before any build):** S1 started on Ian's go (asked 2026-11-08). Claude showed a short
+M1 plan because the old S1 dates (Oct 25 / Nov 8) had passed; Ian replied "Approve, start M1". New dates, the locking of
+post-Oct-14 events, and keyword event types are recorded in `decisions.md` (2026-11-09). The criteria are unchanged.
+
+**Work (Claude Code session started from the HQ session; commits 1e68991, 17c23e6 and the wrap-up commit after this):**
+- Package `src/bloodhound/` with the `bloodhound` command: `collect-markets`, `collect-schedule`, `map-events`,
+  `collect-prices`, `collect-transcripts`, `status`. Stdlib only, SQLite in `data/` (gitignored).
+- All network work was hand-run, one-off, paced batches from the laptop, with no keys and no orders. Kalshi public API
+  ≤ 1 req/s with a 10 s back-off on 429 (about 5,330 requests in total, 0 × 429). Factbase ≤ 1 page / 2 s, each page
+  fetched once (35 calendar pages + 1,252 transcript pages; only extracted segments are cached, 36 MB). Nothing runs
+  continuously.
+- Outcomes are stored in their own table. `db.outcomes()` returns dev outcomes only; test and locked outcomes need
+  `--score-test` plus the frozen hash on a clean HEAD. This is covered by tests.
+- Word matcher with **every example from Kalshi's MENTION.pdf** (re-fetched 2026-11-09) as a test: 36 "counts" and
+  16 "does not count" pass. 5 examples that depend on pronunciation (NASA spoken as a word, "Mandani", Zelenskiy,
+  "firestation.com", "moneyyy") are strict xfails, because a text transcript can't decide them.
+- Scoring code (Decimal midpoint, quote filter, Decimal taker fee rounded up to the cent, Brier, log loss, 10-bin
+  reliability, event-clustered bootstrap with a fixed seed). It is tested on synthetic data only and **has not been run
+  on any outcomes**. 96 tests pass + 5 xfail.
+
+**Observations (dated evidence, 2026-11-09; `docs/evidence/s1-2026-11-09/`):**
+- Settled word markets: KXTRUMPMENTION 7,417 and KXVANCEMENTION 1,965 (yes/no results). 44 Trump markets settled
+  `scalar` (not yes/no) are left out. S0's counts differ a little (dev 157 events / 4,114 markets in S0 vs 156 / 4,070
+  now; test 84 / 2,744 vs 84 / 2,615). The likely causes are scalar markets and 57 tickers that appear in both
+  endpoints. The split is the same whether close dates are read in UTC or ET.
+- Kalshi's historical cutoff moved to 2026-09-10 (it was 2026-08-15 in S0). The batch candle endpoint allows at most
+  10,000 candles per request (HTTP 400 above that), and 1-minute candles are sparse (minutes with no change are
+  missing). The candle used is the last one at or before T_ref. Its age is a median of 0 min, p90 3 min, p99 39 min,
+  max 280 min (30 of 5,146 are older than 60 min). There is no staleness filter, because none is pre-registered.
+- **Factbase tags are loose:** campaign rallies appear only as "Pool Report" entries, at their scheduled time. For
+  example, the Bullhead City rally is listed at 4:00 PM ET while the President landed at 4:04 PM (2026-10-14). The
+  matcher therefore uses event entries under any tag and drops movement/logistics entries (arrives, departs, lid,
+  call time). **Dev-only check:** in 0 of 120 matched dev events did any market close before T_ref or before the
+  scheduled start. The Factbase calendar starts 2025-01-18, so there is no 2024 history from the calendar.
+- **Universe after the spec-v2 filters (counts only, no outcomes):**
+
+  | KXTRUMPMENTION | events / markets before filters | word markets | scheduled start found | two-sided at T_ref | spread ≤ 10¢ |
+  |---|---|---|---|---|---|
+  | dev | 156 / 4,070 | 156 / 4,032 | 120 / 3,060 | 114 / 2,893 | **114 / 2,583** |
+  | test | 84 / 2,615 | 84 / 2,533 | 62 / 1,836 | 60 / 1,735 | **60 / 1,640** |
+  | locked (after Oct 14) | 18 / 675 | 18 / 657 | 11 / 418 | 11 / 404 | 11 / 403 |
+
+  The test set clears the gate's size floor (≥ 30 events, ≥ 300 markets), so the "data not feasible" STOP does not
+  apply. Most of the 22 test events without a start time are TV interviews, which aren't on the calendar.
+  **Vance:** 0 events have a start time. Factbase has no Vance calendar (`/factbase/vance/calendar/` redirects).
+  Finding a source is M2 #3b; if none is found by the freeze, Vance is dropped, per Q3a.
+
+**Incidents (logged honestly):** (1) While checking API field names, one raw test-period market record
+(KXTRUMPMENTION-26SEP03-VENE) was printed with its `result` field. It was not analysed or used, and later inspections
+left `result` out. (2) Two batch runs stopped partway: Claude stopped one on purpose to switch the DB to WAL so the
+two batches could share it, and the other hit the batch endpoint's 10,000-candle cap. Both resumed without duplicate
+fetches. Their `runs` rows are missing because they exited early. (3) Claude first committed `egg-info` and a SQLite
+journal file by mistake. This was fixed by amending before any push.
+
+**⭐ Evidence → decision → consequence:** Factbase listed rallies as "Pool Report" (evidence) → Claude widened the
+schedule rule from "Official Schedule only" to "event entries under any tag, minus movements" and checked it on dev
+only (decision) → 120 of 156 dev and 62 of 84 test events now have a start time, up from 105 / 55. The
+rallies, the most typical mention-market events, are now included (consequence). The test-set mapping used no
+outcomes or close times.
+
+**AI use + Ian's judgment:**
+- Ian's prompt: start S1, keep the dev/test split, paced reads only, show a plan first if s1-plan.md is out of date.
+  Ian's reply to the plan: "Approve, start M1" (accepted as proposed, including locking the post-Oct-14 events and
+  the keyword event types).
+- Claude (Opus 5.5) wrote all the code, tests, event-matching rules and this entry. Rules Ian hasn't reviewed yet: the
+  schedule-matching heuristic (score ≥ 0.5, movement entries dropped; full list in `event_map.csv`), the matcher's
+  heuristics (adjective suffixes get no plural, a small irregular-plural list, Dr./Mr. abbreviations), and using the
+  last sparse candle with no staleness limit. **Ian's verdict:** pending.
+
+**Next (M2, Nov 12–15):** Vance source search (#3b); event-type keyword rules (logged as an AI input); base-rate
+model v1 on **dev only**, with the look-ahead guard (transcript date < event date); reliability on dev; tuning;
+freeze Nov 16 → ask Ian before scoring the test set.

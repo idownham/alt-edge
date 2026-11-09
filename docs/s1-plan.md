@@ -9,7 +9,8 @@
 >
 > **M1 status (2026-11-09):** done: #1 collector, #2 schedule mapping + T_ref prices (Trump), #4 matcher (all
 > contract examples as tests), the scoring/fee code from #6 (tested, not yet run on outcomes), #7 `status`. Code in
-> `src/bloodhound/`, run as `bloodhound <command>`. Not done yet: #3 transcripts, #3b Vance source (Factbase has no
+> `src/bloodhound/`, run as `bloodhound <command>`. #3 transcripts collected early (1,252 calendar-linked pages, Jan 2025 →
+> Nov 8 2026; the calendar has no 2024). After filters: Trump dev 114 ev / 2,583 mkts, test 60 / 1,640. Not done yet: #3b Vance source (Factbase has no
 > Vance calendar: `/factbase/vance/calendar/` redirects), #5 model.
 
 *Proposed by Claude at the end of S0. Ian answered Q1–Q9 and confirmed criteria v2 on 2026-10-14 (`decisions.md`).

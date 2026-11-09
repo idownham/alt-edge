@@ -15,6 +15,8 @@ from .http import HTTPStatusError, KalshiPublic, utc_now_iso
 
 WINDOW = dt.timedelta(hours=24)       # look back this far for the last candle before T_ref
 BATCH_WINDOW = dt.timedelta(hours=6)  # smaller window for the multi-market endpoint
+BATCH_MAX_CANDLES = 10_000            # API: markets x minutes per batch request (HTTP 400 above, 2026-11-09)
+BATCH_CHUNK = min(100, BATCH_MAX_CANDLES // int(BATCH_WINDOW.total_seconds() // 60))  # = 27
 NOT_A_WORD = "does not qualify"       # "Event does not qualify" strikes are excluded (spec v2)
 
 
@@ -96,8 +98,8 @@ def collect_prices(conn: sqlite3.Connection, api: KalshiPublic, series: str | No
             batch.setdefault(r["event_ticker"], []).append(r)
     for ev, rows in batch.items():
         t_ref = _ts(rows[0]["t_ref_utc"])
-        for k in range(0, len(rows), 100):
-            chunk = rows[k:k + 100]
+        for k in range(0, len(rows), BATCH_CHUNK):
+            chunk = rows[k:k + BATCH_CHUNK]
             start = t_ref - int(BATCH_WINDOW.total_seconds())
             body = api.get("/markets/candlesticks", market_tickers=",".join(x["ticker"] for x in chunk),
                            period_interval=1, start_ts=start, end_ts=t_ref)
