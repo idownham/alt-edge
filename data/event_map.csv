@@ -1,0 +1,342 @@
+event_ticker,period,kalshi_event,listed_date,factbase_entry,start_utc,t_ref_utc,method,score,runner_up,note
+KXTRUMPMENTION-2-25MAY24,dev,,2025-05-24,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-2-25MAY30,dev,Press Conference with Elon Musk,2025-05-30,The President participates in a Press Conference with Elon Musk,2025-05-30T17:30:00Z,2025-05-30T17:15:00Z,auto,1.00,0.25,
+KXTRUMPMENTION-25APR02,dev,the Rose Garden tariff speech,2025-04-02,The President participates in the Make America Wealthy Again event,2025-04-02T20:00:00Z,2025-04-02T19:45:00Z,auto,0.50,,
+KXTRUMPMENTION-25APR07,dev,the bilateral with Netanyahu,2025-04-07,CANCELLED: The President participates in a Bilateral Meeting with the Prime Minister of the State of Israel,2025-04-07T18:00:00Z,2025-04-07T17:45:00Z,auto,0.50,,
+KXTRUMPMENTION-25APR29,dev,his speech at the Macomb County Rally,2025-04-29,The President delivers his 100th Day in Office Achievement Speech,2025-04-29T22:00:00Z,2025-04-29T21:45:00Z,auto,0.50,,
+KXTRUMPMENTION-25APR30,dev,the CUOMO Town Hall: The First 100 Days,2025-04-30,The President participates in a NewsNation Cuomo Townhall: The First 100 Days,2025-05-01T00:00:00Z,2025-04-30T23:45:00Z,auto,0.60,0.20,
+KXTRUMPMENTION-25AUG05,dev,Live Airing of President Trump on CNBC's Squawk Box on August 5 at 8AM ET,2025-08-05,The President calls into CNBC's Squawk Box for a live phone interview,2025-08-05T12:00:00Z,2025-08-05T11:45:00Z,auto,0.67,,
+KXTRUMPMENTION-25AUG06,dev,The President's Announcement,2025-08-06,The President makes an Announcement,2025-08-06T20:30:00Z,2025-08-06T20:15:00Z,auto,1.00,,
+KXTRUMPMENTION-25AUG08,dev,the President's Remarks,2025-08-08,The President delivers remarks,2025-08-07T20:00:00Z,2025-08-07T19:45:00Z,auto,1.00,,
+KXTRUMPMENTION-25AUG11,dev,"Press Conference on Crime and Beautification on August 11, at 10:00 A.M. EST in the Press Briefing Room",2025-08-11,The President holds a Press Conference,2025-08-11T14:00:00Z,2025-08-11T13:45:00Z,auto,0.50,,
+KXTRUMPMENTION-25AUG15,dev,the President's Remarks,2025-08-15,The President delivers remarks,2025-08-14T17:00:00Z,2025-08-14T16:45:00Z,auto,1.00,,
+KXTRUMPMENTION-25AUG16,dev,Press Conference After Trump and Putin's Meeting on August 15 in Alaska,2025-08-16,,,,none,,,no scheduled entry >= 0.5 (best 0.33)
+KXTRUMPMENTION-25AUG25,dev,Meeting at the White House With South Korean President Lee Jae Myung,2025-08-25,,,,none,,,no scheduled entry >= 0.5 (best 0.12)
+KXTRUMPMENTION-25DEC03,dev,Announcement on December 2nd,2025-12-03,,,,none,,0.50,ambiguous: tie at 0.50
+KXTRUMPMENTION-25DEC05,dev,National Christmas Tree Lighting,2025-12-05,The President and The First Lady participate in the National Christmas Tree Lighting [Actual: 6:29 PM],2025-12-04T23:00:00Z,2025-12-04T22:45:00Z,auto,1.00,,
+KXTRUMPMENTION-25DEC07,dev,State Department Kennedy Center Honors Medal Presentation Dinner,2025-12-07,The President attends the State Department Kennedy Center Honors Medal Presentation Dinner [Actual: 7:40 PM],2025-12-07T01:10:00Z,2025-12-07T00:55:00Z,auto,1.00,0.62,
+KXTRUMPMENTION-25DEC12,dev,signing ceremony on December 11th,2025-12-12,The President participates in a signing ceremony [Actual: 5:59 PM],2025-12-11T21:45:00Z,2025-12-11T21:30:00Z,auto,0.67,0.67,
+KXTRUMPMENTION-25DEC16,dev,Christmas Reception on December 15th,2025-12-16,,,,none,,0.67,ambiguous: tie at 0.67
+KXTRUMPMENTION-25DEC20,dev,"Remarks in Rocky Mount, NC",2025-12-20,The President delivers Remarks on the Economy [8:58 PM Actual],2025-12-20T02:00:00Z,2025-12-20T01:45:00Z,auto,0.75,,
+KXTRUMPMENTION-25DEC29,dev,Bilateral Meeting with the President of Ukraine,2025-12-29,The President participates in a Bilateral Meeting with the President of Ukraine [Actual: 1:40 PM],2025-12-28T18:00:00Z,2025-12-28T17:45:00Z,auto,1.00,0.67,
+KXTRUMPMENTION-25DEC30,dev,48th Kennedy Center Honors,2025-12-30,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-25DEC31,dev,U.S. Army 250th Anniversary Speech,2025-12-31,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-25JUL03,dev,July 3 event at Iowa State Fairgrounds,2025-07-03,The President participates in the Salute to America Celebration [7:00 PM Local; Actual Start: 7:19 PM Local],2025-07-04T00:00:00Z,2025-07-03T23:45:00Z,auto,0.75,,
+KXTRUMPMENTION-25JUL15,dev,Pennsylvania Energy and Innovation Summit hosted by Senator Dave McCormick at Carnegie Mellon University in Pittsburgh,2025-07-15,The President participates in the Inaugural Pennsylvania Energy and Innovation Event [3:33 PM Actual],2025-07-15T18:30:00Z,2025-07-15T18:15:00Z,auto,0.58,,
+KXTRUMPMENTION-25JUL22,dev,"his speech during the “Winning the AI Race""  event on July 23",2025-07-22,,,,none,,,no scheduled entry >= 0.5 (best 0.20)
+KXTRUMPMENTION-25JUL30,dev,remarks on Making Health Technology Great Again,2025-07-30,The President delivers remarks on Making Health Technology Great Again,2025-07-30T20:00:00Z,2025-07-30T19:45:00Z,auto,1.00,,
+KXTRUMPMENTION-25JUN10,dev,"speech to honor the 250th anniversary of the United States Army at Fort Bragg, NC",2025-06-10,,,,none,,,no scheduled entry >= 0.5 (best 0.30)
+KXTRUMPMENTION-25JUN21,dev,Address to the Nation Originally,2025-06-21,The President addresses the nation after Iran air strikes,2025-06-22T02:00:00Z,2025-06-22T01:45:00Z,auto,0.50,,
+KXTRUMPMENTION-25JUN25,dev,Press Conference at the NATO summit,2025-06-25,The President participates in a Press Conference [3:00 PM Local],2025-06-25T13:00:00Z,2025-06-25T12:45:00Z,auto,0.50,0.25,
+KXTRUMPMENTION-25JUN25-2,dev,Press Conference at the NATO summit,2025-06-25,The President participates in a Press Conference [3:00 PM Local],2025-06-25T13:00:00Z,2025-06-25T12:45:00Z,auto,0.50,0.25,
+KXTRUMPMENTION-25JUN27,dev,visit with the Foreign Ministers of the Democratic Republic of the Congo and the Republic of Rwanda in the Oval Office,2025-06-27,The President participates in a visit with the Foreign Ministers of the Democratic Republic of the Congo and the Republic of Rwanda,2025-06-27T19:00:00Z,2025-06-27T18:45:00Z,auto,1.00,,
+KXTRUMPMENTION-25JUN29,dev,Interview with Maria Bartiromo on Sunday Morning Futures,2025-06-29,The President is interviewed by Maria Bartiromo on Fox News' Sunday Morning Futures,2025-06-29T14:00:00Z,2025-06-29T13:45:00Z,auto,0.83,,
+KXTRUMPMENTION-25MAY01,dev,the University of Alabama Class of 2025 Commencement Keynote Address,2025-05-01,The President delivers remarks at the University of Alabama Commencement [7:00 PM Local],2025-05-02T00:00:00Z,2025-05-01T23:45:00Z,auto,0.50,,
+KXTRUMPMENTION-25MAY06-2,dev,Trump's Bilateral Meeting with the Prime Minister of Canada,2025-05-06,The President participates in a Bilateral Meeting with the Prime Minister of Canada,2025-05-06T15:45:00Z,2025-05-06T15:30:00Z,auto,1.00,0.60,
+KXTRUMPMENTION-25MAY08,dev,Trade Announcement,2025-05-08,The President makes a Trade Announcement,2025-05-08T14:00:00Z,2025-05-08T13:45:00Z,auto,1.00,,
+KXTRUMPMENTION-25MAY13,dev,Press Conference with the Secretary of Health and Human Services,2025-05-13,The President holds a Press Conference with the Secretary of Health and Human Services,2025-05-12T13:30:00Z,2025-05-12T13:15:00Z,auto,1.00,0.17,
+KXTRUMPMENTION-25MAY20,dev,Announcement in the Oval Office,2025-05-20,The President Makes an Announcement with the Secretary of Defense,2025-05-20T19:00:00Z,2025-05-20T18:45:00Z,auto,1.00,0.67,
+KXTRUMPMENTION-25MAY21,dev,Bilateral Meeting with the President of the Republic of South Africa,2025-05-21,The President participates in a Bilateral Meeting with the President of the Republic of South Africa,2025-05-21T16:45:00Z,2025-05-21T16:30:00Z,auto,1.00,0.60,
+KXTRUMPMENTION-25MAY30,dev,"Remarks at US Steel Corporation – Irvine Works West Mifflin, PA",2025-05-30,The President delivers remarks on U.S. Steel Deal,2025-05-30T21:00:00Z,2025-05-30T20:45:00Z,auto,0.89,,
+KXTRUMPMENTION-25NOV04,dev,New Jersey Tele-Rally on November 3rd,2025-11-04,The President participates in a New Jersey Tele-Rally,2025-11-04T00:30:00Z,2025-11-04T00:15:00Z,auto,0.80,0.40,
+KXTRUMPMENTION-25NOV07,dev,America Business Forum,2025-11-07,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-25NOV07B,dev,C5+1 Summit on November 6th,2025-11-07,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-25NOV11,dev,Bilateral meeting with President of Syria,2025-11-11,The President participates in a Bilateral meeting with the President of Syria,2025-11-10T16:00:00Z,2025-11-10T15:45:00Z,auto,1.00,,
+KXTRUMPMENTION-25NOV12,dev,The Ingraham Angle on November 11th,2025-11-12,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-25NOV13,dev,signing of Senate Amendment,2025-11-13,"The President signs Senate Amendment to H.R. 5371 - Continuing Appropriations Ag, Leg Branch, Milcon-VA and Extensions Act 2026 [Actual: 10:12 PM]",2025-11-13T02:45:00Z,2025-11-13T02:30:00Z,auto,0.67,0.33,
+KXTRUMPMENTION-25NOV14,dev,Executive Order Signing Ceremony and Announcements,2025-11-14,The President and First Lady participate in an Executive Order signing,2025-11-13T19:00:00Z,2025-11-13T18:45:00Z,auto,0.60,,
+KXTRUMPMENTION-25NOV18,dev,Remarks at McDonald’s Impact Summit,2025-11-18,The President delivers Remarks at McDonald’s Impact Summit,2025-11-17T23:00:00Z,2025-11-17T22:45:00Z,auto,1.00,,
+KXTRUMPMENTION-25NOV19,dev,"bilateral meeting, signing and lunch events with Saudi Crown Prince Mohammed bin Salman",2025-11-19,,,,none,,,no scheduled entry >= 0.5 (best 0.45)
+KXTRUMPMENTION-25NOV20,dev,U.S. - Saudi Investment Forum,2025-11-20,The President delivers remarks at the U.S. - Saudi Investment Forum,2025-11-19T17:00:00Z,2025-11-19T16:45:00Z,auto,1.00,0.20,
+KXTRUMPMENTION-25NOV22,dev,The Brian Kilmeade Radio Show,2025-11-22,Brian Kilmeade interviews the President on his Fox News Radio show,2025-11-21T15:06:00Z,2025-11-21T14:51:00Z,auto,1.00,,
+KXTRUMPMENTION-25NOV25,dev,Executive Order signing,2025-11-25,The President signs an Executive Order,2025-11-24T21:00:00Z,2025-11-24T20:45:00Z,auto,0.67,,
+KXTRUMPMENTION-25OCT05,dev,Remarks at America’s Navy 250,2025-10-05,The President delivers remarks at Navy 250 Celebration [Actual: 4:14 PM],2025-10-05T19:30:00Z,2025-10-05T19:15:00Z,auto,0.67,,
+KXTRUMPMENTION-25OCT07,dev,Bilateral meeting with Canadian Prime Minister Mark Carney on October 7th,2025-10-07,The President participates in a Bilateral Meeting with the Prime Minister of Canada,2025-10-07T15:45:00Z,2025-10-07T15:30:00Z,auto,0.50,0.25,
+KXTRUMPMENTION-25OCT09,dev,Roundtable on ANTIFA on October 8th,2025-10-09,The President participates in a Roundtable on ANTIFA,2025-10-08T19:00:00Z,2025-10-08T18:45:00Z,auto,0.67,,
+KXTRUMPMENTION-25OCT10,dev,Bilateral meeting with President of Finland on October 9th,2025-10-10,The President participates in a Bilateral Meeting with the President of the Republic of Finland,2025-10-09T19:15:00Z,2025-10-09T19:00:00Z,auto,0.75,0.25,
+KXTRUMPMENTION-25OCT10-2,dev,Cabinet Meeting on October 9th,2025-10-10,The President hosts a Cabinet Meeting,2025-10-09T15:00:00Z,2025-10-09T14:45:00Z,auto,0.67,0.33,
+KXTRUMPMENTION-25OCT11,dev,Oval Office announcement on October 10th,2025-10-11,The President makes an Announcement,2025-10-10T21:00:00Z,2025-10-10T20:45:00Z,auto,0.75,0.25,
+KXTRUMPMENTION-25OCT14,dev,Speech in Israel on October 13th,2025-10-14,,,,none,,,no scheduled entry >= 0.5 (best 0.33)
+KXTRUMPMENTION-25OCT14B,dev,speech at Middle East Peace Ceremony in Egypt on October 13th after 12:45pm ET,2025-10-14,The President participates in a Middle East Peace Ceremony [2:30 PM Local; 7:17 PM Actual],2025-10-13T11:30:00Z,2025-10-13T11:15:00Z,auto,0.56,0.44,
+KXTRUMPMENTION-25OCT15,dev,Bilateral meeting with President of the Argentine Republic on October 14th,2025-10-15,,,,none,,,no scheduled entry >= 0.5 (best 0.40)
+KXTRUMPMENTION-25OCT16,dev,Medal of Freedom Ceremony for Charlie Kirk on October 14th,2025-10-16,The President participates in a Medal of Freedom Ceremony for Charlie Kirk,2025-10-14T20:00:00Z,2025-10-14T19:45:00Z,auto,0.83,,
+KXTRUMPMENTION-25OCT16B,dev,Press Conference on October 15th,2025-10-16,The President participates in a Press Conference with the Director of the Federal Bureau of Investigation,2025-10-15T19:00:00Z,2025-10-15T18:45:00Z,auto,0.67,,
+KXTRUMPMENTION-25OCT17,dev,Oval Office announcement on October 16th,2025-10-17,The President makes an Announcement,2025-10-16T19:00:00Z,2025-10-16T18:45:00Z,auto,0.75,,
+KXTRUMPMENTION-25OCT18,dev,Bilateral meeting with the President of Ukraine,2025-10-18,,,,none,,,no scheduled entry >= 0.5 (best 0.33)
+KXTRUMPMENTION-25OCT21,dev,Bilateral meeting with Prime Minister of the Commonwealth of Australia on October 20th,2025-10-21,The President participates in a Bilateral Meeting with the Prime Minister of the Commonwealth of Australia,2025-10-20T15:15:00Z,2025-10-20T15:00:00Z,auto,0.86,0.57,
+KXTRUMPMENTION-25OCT22,dev,Rose Garden Club Lunch on October 21st,2025-10-22,The President hosts a Rose Garden Club Lunch,2025-10-21T16:00:00Z,2025-10-21T15:45:00Z,auto,0.80,0.60,
+KXTRUMPMENTION-25OCT23,dev,meeting with the Secretary General of the North Atlantic Treaty Organization on October 22nd,2025-10-23,The President participates in a meeting with the Secretary General of the North Atlantic Treaty Organization,2025-10-22T20:00:00Z,2025-10-22T19:45:00Z,auto,0.88,0.12,
+KXTRUMPMENTION-25OCT24,dev,Announcement on October 23rd,2025-10-24,The President makes an Announcement,2025-10-23T19:00:00Z,2025-10-23T18:45:00Z,auto,0.50,,
+KXTRUMPMENTION-25OCT27,dev,Bilateral Meeting and signing with the Prime Minister of Malaysia,2025-10-27,The President participates in an Expanded Bilateral Meeting and signing with the Prime Minister of Malaysia [2:30 PM Local; 1:20 PM Actual],2025-10-26T06:30:00Z,2025-10-26T06:15:00Z,auto,1.00,0.67,
+KXTRUMPMENTION-25OCT29,dev,Troop Visit and Remarks on the USS George Washington,2025-10-29,The President participates in a Troop Visit and Remarks on the USS George Washington [3:45 PM Local; 4:14 PM Actual],2025-10-28T06:45:00Z,2025-10-28T06:30:00Z,auto,1.00,0.17,
+KXTRUMPMENTION-25OCT30,dev,Dinner hosted by the President of the Republic of Korea,2025-10-30,The President participates in a Dinner hosted by the President of the Republic of Korea [6:30 PM Local; 6:37 PM Actual],2025-10-29T09:30:00Z,2025-10-29T09:15:00Z,auto,1.00,0.50,
+KXTRUMPMENTION-25SEP02,dev,Announcement in the Oval Office,2025-09-02,"The President makes an announcement [Space Command relocation to Huntsville, Alabama]",2025-09-02T18:00:00Z,2025-09-02T17:45:00Z,auto,1.00,,
+KXTRUMPMENTION-25SEP05,dev,Oval  Office announcement at 4:00 PM,2025-09-05,"The President makes an announcement [Note: add ""and signs Executive Orders""]",2025-09-05T20:00:00Z,2025-09-05T19:45:00Z,auto,1.00,0.67,
+KXTRUMPMENTION-25SEP15,dev,Trump signs a Presidential Memorandum in the Oval Office at 4:00 PM,2025-09-15,The President signs a Presidential Memorandum,2025-09-15T20:00:00Z,2025-09-15T19:45:00Z,auto,1.00,0.40,
+KXTRUMPMENTION-25SEP17,dev,President Trump delivers remarks at the UK State Banquet at Windsor Castle on September 17th,2025-09-17,The President and The First Lady participate in a State Banquet [8:30 PM Local],2025-09-17T19:30:00Z,2025-09-17T19:15:00Z,auto,0.57,0.29,
+KXTRUMPMENTION-25SEP18,dev,Trump-Starmer bilateral at Chequers on September 18th,2025-09-18,The President participates in a Bilateral Meeting with Prime Minister Keir Starmer [11:15 AM Local],2025-09-18T10:15:00Z,2025-09-18T10:00:00Z,auto,0.75,0.50,
+KXTRUMPMENTION-25SEP18-2,dev,Interview on The Story with Martha Maccallum on September 18th,2025-09-18,The President sits for an interview with Martha MacCallum of Fox News [4:00 PM Local] [Note: Time is approximate. Interview occurred between the press conference and departure at Chequers],2025-09-18T15:00:00Z,2025-09-18T14:45:00Z,auto,0.60,,
+KXTRUMPMENTION-25SEP21,dev,Charlie Kirk Memorial at State Farm Stadium on September 21st,2025-09-21,The President participates in the Memorial Service for Charlie Kirk [11:00 AM Local],2025-09-21T18:00:00Z,2025-09-21T17:45:00Z,auto,0.86,,
+KXTRUMPMENTION-25SEP22,dev,Announcement on Significant Medical and Scientific Findings for America's Children on September 22nd,2025-09-22,The President makes an announcement on Significant Medical and Scientific Findings for America's Children,2025-09-22T20:00:00Z,2025-09-22T19:45:00Z,auto,0.88,,
+KXTRUMPMENTION-25SEP23,dev,Trump Address the United Nations General Assembly,2025-09-23,The President delivers remarks to the United Nations General Assembly [Actual: 10:08 AM],2025-09-23T13:50:00Z,2025-09-23T13:35:00Z,auto,0.80,0.60,
+KXTRUMPMENTION-25SEP29,dev,Bilateral meeting with Benjamin Netanyahu on September 29th,2025-09-29,,,,none,,,no scheduled entry >= 0.5 (best 0.40)
+KXTRUMPMENTION-25SEP29-2,dev,Press Conference meeting with Benjamin Netanyahu on September 29th,2025-09-29,,,,none,,,no scheduled entry >= 0.5 (best 0.33)
+KXTRUMPMENTION-25SEP30,dev,Oval Office announcement on September 30th,2025-09-30,The President delivers an announcement [Actual: 11:48 AM],2025-09-30T15:00:00Z,2025-09-30T14:45:00Z,auto,0.75,0.50,
+KXTRUMPMENTION-26APR01,dev,Address to the Nation,2026-04-01,The President delivers an Address to the Nation,2026-04-02T01:00:00Z,2026-04-02T00:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26APR06,dev,Remarks with Artemis II,2026-04-06,The President calls the Artemis II astronauts after their lunar flyby,2026-04-07T02:00:00Z,2026-04-07T01:45:00Z,auto,0.67,,
+KXTRUMPMENTION-26APR08,dev,Bilateral Meetings with Mark Rutte,2026-04-08,,,,none,,,no scheduled entry >= 0.5 (best 0.25)
+KXTRUMPMENTION-26APR12,dev,Sunday Morning Futures with Maria Bartiromo,2026-04-12,"The President calls in for a live telephone interview with Maria Bartiromo on Fox News' ""Sunday Morning Futures""",2026-04-12T14:04:00Z,2026-04-12T13:49:00Z,auto,1.00,,
+KXTRUMPMENTION-26APR15,dev,Mornings with Maria Bartiromo part 2 interview,2026-04-15,The President participates in a Pre-Tape Interview with Maria Bartiromo,2026-04-14T20:00:00Z,2026-04-14T19:45:00Z,auto,0.75,,
+KXTRUMPMENTION-26APR16,dev,Roundtable on No Tax on Tips,2026-04-16,The President participates in a Roundtable and Remarks on Tax Day [4:00 PM Local],2026-04-16T23:00:00Z,2026-04-16T22:45:00Z,auto,0.50,0.25,
+KXTRUMPMENTION-26APR17B,dev,Turning Point USA: Build the Red Wall,2026-04-17,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26APR20,dev,Telerally on April 20th,2026-04-20,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26APR21,dev,CNBC: Squawk Box,2026-04-21,"The President participates in a Live Phone Interview with Joe Kernen, Squawk Box, CNBC",2026-04-21T12:30:00Z,2026-04-21T12:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26APR23,dev,Health Care Affordability Event,2026-04-23,The President participates in a Health Care Affordability Event,2026-04-23T19:00:00Z,2026-04-23T18:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26APR26,dev,60 Minutes,2026-04-26,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26APR28,dev,remarks during the Greeting with His Majesty King Charles III of the United Kingdom of Great Britain and Northern Ireland and Her Majesty Queen Camilla,2026-04-28,,,,none,,0.93,ambiguous: tie at 0.93
+KXTRUMPMENTION-26APR29C,dev,Greeting with Artemis II Astronauts,2026-04-29,The President participates in a Greeting with Artemis II Astronauts,2026-04-29T18:00:00Z,2026-04-29T17:45:00Z,auto,1.00,0.25,
+KXTRUMPMENTION-26APR30,dev,Newsmax: The Record with Greta Van Susteren,2026-04-30,The President participates in a Phone Interview [Note: With Greta Van Susteren of Newsmax],2026-04-30T15:30:00Z,2026-04-30T15:15:00Z,auto,0.80,,
+KXTRUMPMENTION-26AUG03,test,THE PRESIDENT signs an Executive Order,2026-08-03,The President signs an Executive Order,2026-08-03T17:30:00Z,2026-08-03T17:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26AUG04,test,Fox News at Night,2026-08-04,Trace Gallagher interviews President Trump for Fox News [5:30 PM Local] [Note: Time is approximate],2026-08-05T00:30:00Z,2026-08-05T00:15:00Z,auto,0.67,,
+KXTRUMPMENTION-26AUG05,test,"Remarks in Las Vegas, Nevada",2026-08-05,The President delivers Remarks [1:30 PM Local],2026-08-05T20:30:00Z,2026-08-05T20:15:00Z,auto,0.75,,
+KXTRUMPMENTION-26AUG06,test,Tele-Rally with Megan Degenfelder,2026-08-06,The President participates in a Tele-Rally [Note: Call in support of Megan Degenfelder's gubernatorial campaign in Wyoming],2026-08-06T22:15:00Z,2026-08-06T22:00:00Z,auto,1.00,,
+KXTRUMPMENTION-26AUG06B,test,Fly Out Day - Punchbowl News interview,2026-08-06,"The President participates in a Pre-Tape Interview [Note: Jake Sherman, Punchbowl News]",2026-08-06T20:00:00Z,2026-08-06T19:45:00Z,auto,0.50,,
+KXTRUMPMENTION-26AUG07,test,Roundtable on American Mining,2026-08-07,The President hosts a Roundtable on American Mining,2026-08-07T19:00:00Z,2026-08-07T18:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26AUG10,test,Tele-Rally with Darline Graham,2026-08-10,The President participates in a Tele-Rally [Note: Call in support of Darline Graham's senate campaign in South Carolina],2026-08-10T22:30:00Z,2026-08-10T22:15:00Z,auto,1.00,0.50,
+KXTRUMPMENTION-26AUG10B,test,Tele-Rally with Michael Alfonso,2026-08-10,The President participates in a Tele-Rally [Note: Call in support of Michael Alfonso's congressional campaign in Wisconsin],2026-08-10T23:00:00Z,2026-08-10T22:45:00Z,auto,1.00,0.50,
+KXTRUMPMENTION-26AUG11,test,Real America's Voice - America Speaks,2026-08-11,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26AUG13,test,"next White House livestream (excluding Remarks in Nassau County, New York)",2026-08-13,,,,none,,,no scheduled entry >= 0.5 (best 0.20)
+KXTRUMPMENTION-26AUG14,test,"Remarks in Nassau County, New York",2026-08-14,,,,none,,,no scheduled entry >= 0.5 (best 0.20)
+KXTRUMPMENTION-26AUG20,test,THE PRESIDENT and THE FIRST LADY participate in a Fostering the Future Announcement,2026-08-20,The President and The First Lady participate in a Fostering the Future Announcement,2026-08-20T20:00:00Z,2026-08-20T19:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26AUG21,test,Rally with Senator Darline Graham,2026-08-21,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26AUG24,test,Rose Garden Event,2026-08-24,The President participates in a Rose Garden Event,2026-08-24T18:30:00Z,2026-08-24T18:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26AUG24B,test,Tele-Rally with Darline Graham,2026-08-24,The President participates in a Tele-Rally [Note: Call in support of Darline Graham's senate campaign in South Carolina],2026-08-24T23:00:00Z,2026-08-24T22:45:00Z,auto,1.00,0.50,
+KXTRUMPMENTION-26AUG28,test,Remarks at NASA Lyndon B. Johnson Space Center,2026-08-28,The President calls the International Space Station [12:00 PM Local],2026-08-28T17:00:00Z,2026-08-28T16:45:00Z,auto,0.57,0.57,
+KXTRUMPMENTION-26AUG30,test,Fox News: Sunday Night in America,2026-08-30,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26AUG31,test,Announcement on Healthcare Affordability,2026-08-31,The President makes an Announcement on Healthcare Affordability,2026-08-31T19:00:00Z,2026-08-31T18:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26FEB03,dev,The Dan Bongino Show,2026-02-03,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26FEB04,dev,meetings with the President of the Republic of Colombia,2026-02-04,The President participates in a meeting with the President of the Republic of Colombia,2026-02-03T16:00:00Z,2026-02-03T15:45:00Z,auto,1.00,0.33,
+KXTRUMPMENTION-26FEB06,dev,National Prayer Breakfast,2026-02-06,The President attends the National Prayer Breakfast,2026-02-05T13:30:00Z,2026-02-05T13:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26FEB07,dev,The President signs Executive Orders,2026-02-07,The President signs Executive Orders,2026-02-06T20:00:00Z,2026-02-06T19:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26FEB09,dev,Tom Llamas with President Donald Trump in an exclusive interview on Super Bowl LX Pregame Show,2026-02-09,,,,none,,,no scheduled entry >= 0.5 (best 0.22)
+KXTRUMPMENTION-26FEB11,dev,Fox Business: Kudlow,2026-02-11,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26FEB12,dev,Champion of Coal Event,2026-02-12,The President participates in the Champion of Coal Event,2026-02-11T21:00:00Z,2026-02-11T20:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26FEB13,dev,Announcement with the Administrator of the EPA,2026-02-13,The President makes an Announcement with the Administrator of the EPA,2026-02-12T18:30:00Z,2026-02-12T18:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26FEB14,dev,remarks to Fort Bragg Military Families,2026-02-14,The President delivers remarks to Fort Bragg Military Families,2026-02-13T18:30:00Z,2026-02-13T18:15:00Z,auto,1.00,0.40,
+KXTRUMPMENTION-26FEB19,dev,Black History Month Reception,2026-02-19,The President participates in a Black History Month Reception,2026-02-18T20:00:00Z,2026-02-18T19:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26FEB20,dev,Remarks on the Economy,2026-02-20,The President delivers Remarks on the Economy [Actual: 4:28 PM],2026-02-19T21:00:00Z,2026-02-19T20:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26FEB21,dev,Working Breakfast with Governors,2026-02-21,The President participates in a Working Breakfast with Governors,2026-02-20T14:30:00Z,2026-02-20T14:15:00Z,auto,1.00,0.33,
+KXTRUMPMENTION-26FEB22,dev,Governors Dinner,2026-02-22,The President and First Lady participate in a Governors Dinner,2026-02-21T23:45:00Z,2026-02-21T23:30:00Z,auto,1.00,1.00,
+KXTRUMPMENTION-26FEB23,dev,Josh Pate's College Football Show,2026-02-23,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26FEB24,dev,Angel Families Remembrance Ceremony,2026-02-24,The President participates in Angel Families Remembrance Ceremony,2026-02-23T15:00:00Z,2026-02-23T14:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26FEB28,dev,2026 State of the Union,2026-02-28,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26JAN03,dev,news conference at Mar-a-Lago (originally,2026-01-03,The President holds a press conference to discuss the U.S. attack on Venezuela and capture of Nicolás Maduro [Actual: 11:38 AM],2026-01-03T16:00:00Z,2026-01-03T15:45:00Z,auto,0.75,0.50,
+KXTRUMPMENTION-26JAN14,dev,CBS Evening News,2026-01-14,"Tony Dokoupil of CBS News Interviews Donald Trump in Dearborn, Michigan",2026-01-13T18:20:00Z,2026-01-13T18:05:00Z,auto,0.67,,
+KXTRUMPMENTION-26JAN15,dev,Signing Ceremony on January 14th,2026-01-15,The President participates in a Signing Ceremony,2026-01-14T19:00:00Z,2026-01-14T18:45:00Z,auto,0.67,,
+KXTRUMPMENTION-26JAN16,dev,Visit of the 2025 Stanley Cup Champions The Florida Panthers,2026-01-16,The President participates in a Visit of the 2025 Stanley Cup Champions The Florida Panthers,2026-01-15T21:00:00Z,2026-01-15T20:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26JAN17,dev,"The Great, Historic Investment in Rural Health Roundtable",2026-01-17,"The President participates in The Great, Historic Investment in Rural Health Roundtable [Actual: 10:17 AM]",2026-01-16T15:00:00Z,2026-01-16T14:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26JAN18,dev,meetings with the Prime Minister of the Slovak Republic,2026-01-18,The President participates in a meeting with the Prime Minister of the Slovak Republic,2026-01-17T20:30:00Z,2026-01-17T20:15:00Z,auto,1.00,0.40,
+KXTRUMPMENTION-26JAN21,dev,Katie Pavlich Tonight,2026-01-21,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26JAN22,dev,Special Address at WEF,2026-01-22,The President delivers a Special Address to the World Economic Forum [2:30 PM Local],2026-01-21T13:30:00Z,2026-01-21T13:15:00Z,auto,0.67,,
+KXTRUMPMENTION-26JAN222,dev,Katie Pavlich Tonight Part 2 interview,2026-01-22,,,,none,,,no scheduled entry >= 0.5 (best 0.25)
+KXTRUMPMENTION-26JAN23,dev,Board of Peace Charter Announcement,2026-01-23,The President participates in the Board of Peace Charter Announcement [10:30 AM Local],2026-01-22T09:30:00Z,2026-01-22T09:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26JAN24,dev,video address to the March for Life,2026-01-24,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26JAN28,dev,"Remarks to Clive, Iowa",2026-01-28,The President delivers Remarks [Local: 3:00 PM] [Note: Speech started 85 minutes late],2026-01-27T21:00:00Z,2026-01-27T20:45:00Z,auto,0.67,0.33,
+KXTRUMPMENTION-26JAN29,dev,Remarks on Trump Accounts,2026-01-29,The President delivers remarks on Trump Accounts,2026-01-28T16:00:00Z,2026-01-28T15:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26JAN30,dev,Cabinet Meeting,2026-01-30,The President participates in a Cabinet Meeting,2026-01-29T16:00:00Z,2026-01-29T15:45:00Z,auto,1.00,0.50,
+KXTRUMPMENTION-26JUL01,test,THE PRESIDENT delivers Remarks Burning Hills Amphitheatre,2026-07-01,The President delivers Remarks [1:15 PM Local],2026-07-01T19:15:00Z,2026-07-01T19:00:00Z,auto,0.75,0.25,
+KXTRUMPMENTION-26JUL02,test,CNBC - Fast Money,2026-07-02,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26JUL04,test,July 4th TRIBUTE TO AMERICA rally,2026-07-04,,,,none,,,no scheduled entry >= 0.5 (best 0.25)
+KXTRUMPMENTION-26JUL06,test,THE PRESIDENT participates in the Launch of Trump Accounts,2026-07-06,The President participates in the Launch of Trump Accounts,2026-07-06T13:30:00Z,2026-07-06T13:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26JUL07,test,Bilateral Meeting with the President of the Republic of Turkey,2026-07-07,The President participates in a Bilateral Meeting with the President of the Republic of Turkey [3:15 PM Local],2026-07-07T12:15:00Z,2026-07-07T12:00:00Z,auto,1.00,0.50,
+KXTRUMPMENTION-26JUL08,test,Press Conference in Turkey,2026-07-08,The President participates in a Press Conference [4:15 PM Local],2026-07-08T15:15:00Z,2026-07-08T15:00:00Z,auto,1.00,0.33,
+KXTRUMPMENTION-26JUL13,test,Fox News: Fox & Friends,2026-07-13,The President calls in to Fox & Friends for an interview,2026-07-13T12:02:00Z,2026-07-13T11:47:00Z,auto,0.67,,
+KXTRUMPMENTION-26JUL14,test,Bilateral Meeting with the Prime Minister of the Republic of Iraq,2026-07-14,The President participates in a Bilateral Meeting with the Prime Minister of the Republic of Iraq,2026-07-14T15:15:00Z,2026-07-14T15:00:00Z,auto,1.00,0.67,
+KXTRUMPMENTION-26JUL14B,test,The Hugh Hewitt Show (Radio),2026-07-14,The President participates in a Live Radio Interview with Hugh Hewitt,2026-07-13T20:00:00Z,2026-07-13T19:45:00Z,auto,0.75,,
+KXTRUMPMENTION-26JUL15,test,Pennsylvania Defense and Innovation Summit,2026-07-15,The President participates in a Pennsylvania Defense and Innovation Summit,2026-07-15T19:15:00Z,2026-07-15T19:00:00Z,auto,1.00,,
+KXTRUMPMENTION-26JUL16,test,Speech to the Nation,2026-07-16,The President delivers an Address to the Nation,2026-07-17T01:00:00Z,2026-07-17T00:45:00Z,auto,0.50,,
+KXTRUMPMENTION-26JUL22,test,"Remarks in Marietta, Georgia",2026-07-22,The President delivers Remarks,2026-07-22T19:00:00Z,2026-07-22T18:45:00Z,auto,0.67,,
+KXTRUMPMENTION-26JUL23,test,Announcement on the Ratepayer Protection Pledge,2026-07-23,The President makes an Announcement on the Ratepayer Protection Pledge,2026-07-23T18:30:00Z,2026-07-23T18:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26JUL24,test,White House Correspondents' Dinner,2026-07-24,The President delivers Remarks [Note: the rescheduled White House Correspondents' Association dinner],2026-07-25T00:55:00Z,2026-07-25T00:40:00Z,auto,1.00,0.50,
+KXTRUMPMENTION-26JUL27,test,"Remarks at General Motors in Milford, Michigan",2026-07-27,The President delivers Remarks,2026-07-27T18:50:00Z,2026-07-27T18:35:00Z,auto,0.60,0.40,
+KXTRUMPMENTION-26JUL28,test,Fox News: Fox & Friends,2026-07-28,The President calls in to Fox & Friends for a live interview,2026-07-28T12:34:00Z,2026-07-28T12:19:00Z,auto,0.67,,
+KXTRUMPMENTION-26JUL28D,test,Tele-Rally with Andy Ogles,2026-07-28,The President participates in a Tele-Rally [Note: Call in support of Andy Ogles' congressional campaign in Tennessee],2026-07-28T22:30:00Z,2026-07-28T22:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26JUL29,test,Tele-Rally with Ty Masterson,2026-07-29,The President participates in a Tele-Rally [Note: Call in support of Ty Masterson's gubernatorial campaign in Kansas],2026-07-29T22:30:00Z,2026-07-29T22:15:00Z,auto,1.00,0.50,
+KXTRUMPMENTION-26JUL30,test,Announcement on Freedom Haulers,2026-07-30,The President makes an Announcement on Freedom Haulers,2026-07-30T17:30:00Z,2026-07-30T17:15:00Z,auto,1.00,0.33,
+KXTRUMPMENTION-26JUL31,test,Cabinet Meeting,2026-07-31,The President hosts a Cabinet Meeting,2026-07-31T15:00:00Z,2026-07-31T14:45:00Z,auto,1.00,0.50,
+KXTRUMPMENTION-26JUN04,test,"Announcement on Beautiful, Clean Coal",2026-06-04,"The President makes an Announcement on Beautiful, Clean Coal",2026-06-04T19:00:00Z,2026-06-04T18:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26JUN05C,test,"Roundtable Chippewa Falls, Wisconsin",2026-06-05,The President participates in a Roundtable on American Agriculture [3:00 PM Local],2026-06-05T20:00:00Z,2026-06-05T19:45:00Z,auto,0.75,0.50,
+KXTRUMPMENTION-26JUN07,test,Meet the Press,2026-06-07,,,,none,,,no scheduled entries on candidate dates
+KXTRUMPMENTION-26JUN08,test,Lindsey Graham Tele-Rally,2026-06-08,The President participates in a Tele-Rally [Note: Rally in support of Lindsey Graham],2026-06-08T21:30:00Z,2026-06-08T21:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26JUN10,test,THE PRESIDENT signs The Secure America Act,2026-06-10,The President signs The Secure America Act,2026-06-10T14:00:00Z,2026-06-10T13:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26JUN11,test,Burt Jones Tele-Rally,2026-06-11,The President participates in Tele-Rally [Note: in support of Burt Jones' Georgia gubernatorial campaign],2026-06-11T23:00:00Z,2026-06-11T22:45:00Z,auto,1.00,0.50,
+KXTRUMPMENTION-26JUN13,test,THE PRESIDENT participates in a Pre-Tape Podcast with The Second Lady,2026-06-13,The President participates in a Pre-Tape Podcast with The Second Lady,2026-06-12T15:00:00Z,2026-06-12T14:45:00Z,auto,1.00,0.40,
+KXTRUMPMENTION-26JUN15,test,Bilateral Meetings with The President of the French Republic,2026-06-15,The President participates in a Bilateral Meeting with The President of the French Republic [5:30 PM Local],2026-06-15T15:30:00Z,2026-06-15T15:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26JUN16,test,Bilateral Meeting with the Emir of the State of Qatar,2026-06-16,The President participates in a Bilateral Meeting with the Emir of the State of Qatar [10:30 AM Local],2026-06-16T08:30:00Z,2026-06-16T08:15:00Z,auto,1.00,0.40,
+KXTRUMPMENTION-26JUN16C,test,Working Lunch with G7 Leaders and the Middle East,2026-06-16,The President participates in a G7 Leaders' Working Dinner [7:30 PM Local],2026-06-15T17:30:00Z,2026-06-15T17:15:00Z,auto,0.50,0.50,
+KXTRUMPMENTION-26JUN17,test,Bilateral Meeting with The President of the Arab Republic of Egypt,2026-06-17,The President participates in a Bilateral Meeting with The President of the Arab Republic of Egypt [11:30 AM Local],2026-06-17T09:30:00Z,2026-06-17T09:15:00Z,auto,1.00,0.60,
+KXTRUMPMENTION-26JUN17C,test,Bilateral Meeting with the Prime Minister of the Republic of India,2026-06-17,The President participates in a Bilateral Meeting with the Prime Minister of the Republic of India [2:45 PM Local],2026-06-17T12:45:00Z,2026-06-17T12:30:00Z,auto,1.00,0.50,
+KXTRUMPMENTION-26JUN17D,test,"Working Lunch with G7 Leaders, Development Countries, and Global Tech CEOs",2026-06-17,,,,none,,0.56,ambiguous: tie at 0.56
+KXTRUMPMENTION-26JUN18,test,Medal of Honor Ceremony,2026-06-18,The President participates in a Medal of Honor Ceremony,2026-06-18T20:00:00Z,2026-06-18T19:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26JUN23,test,Remarks at Mack Trucks,2026-06-23,The President delivers Remarks,2026-06-23T18:05:00Z,2026-06-23T17:50:00Z,auto,1.00,,
+KXTRUMPMENTION-26JUN24,test,Great American State Fair - America is Back Rally,2026-06-24,The President delivers Remarks at the Great American State Fair,2026-06-25T00:30:00Z,2026-06-25T00:15:00Z,auto,0.57,,
+KXTRUMPMENTION-26JUN25,test,Rose Garden Club Dinner with American Farmers,2026-06-25,The President participates in a Rose Garden Club Dinner with American Farmers,2026-06-25T23:00:00Z,2026-06-25T22:45:00Z,auto,1.00,0.17,
+KXTRUMPMENTION-26JUN26,test,Remarks at the Faith & Freedom Coalition's 2026 Policy Conference,2026-06-26,The President delivers Remarks at the Faith & Freedom Coalition's 2026 Policy Conference,2026-06-26T17:30:00Z,2026-06-26T17:15:00Z,auto,1.00,0.17,
+KXTRUMPMENTION-26JUN29,test,next White House livestream,2026-06-29,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26MAR01,dev,2026 State of the Union,2026-03-01,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26MAR02,dev,2026 State of the Union,2026-03-02,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26MAR06,dev,Visit of the 2025 Major League Soccer Champions - Inter Miami CF,2026-03-06,The President participates in the Visit of the 2025 Major League Soccer Champions - Inter Miami CF,2026-03-05T21:00:00Z,2026-03-05T20:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26MAR07,dev,Saving College Sports Roundtable,2026-03-07,The President participates in a Saving College Sports Roundtable,2026-03-06T21:00:00Z,2026-03-06T20:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26MAR08,dev,remarks to the Shield of Americas Summit,2026-03-08,The President delivers remarks to the Shield of Americas Summit,2026-03-07T15:00:00Z,2026-03-07T14:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26MAR19,dev,Bilateral Meeting,2026-03-19,The President participates in a Bilateral Meeting,2026-03-19T15:15:00Z,2026-03-19T15:00:00Z,auto,1.00,0.50,
+KXTRUMPMENTION-26MAR20,dev,Commander in Chief Trophy Presentation,2026-03-20,The President participates in the Commander in Chief Trophy Presentation,2026-03-20T14:30:00Z,2026-03-20T14:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26MAR23,dev,Memphis Safe Task Force Roundtable,2026-03-23,The President participates in the Memphis Safe Task Force Roundtable [12:00 PM Local],2026-03-23T17:00:00Z,2026-03-23T16:45:00Z,auto,1.00,0.20,
+KXTRUMPMENTION-26MAR24,dev,Swearing-In Ceremony for the Secretary of Homeland Security,2026-03-24,The President participates in a Swearing-In Ceremony for the Secretary of Homeland Security,2026-03-24T17:30:00Z,2026-03-24T17:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26MAR25,dev,Remarks at the NRCC Annual Fundraising Dinner,2026-03-25,The President delivers Remarks at the NRCC Annual Fundraising Dinner,2026-03-25T23:20:00Z,2026-03-25T23:05:00Z,auto,1.00,0.20,
+KXTRUMPMENTION-26MAR26B,dev,Cabinet Meeting,2026-03-26,The President participates in a Cabinet Meeting,2026-03-26T14:00:00Z,2026-03-26T13:45:00Z,auto,1.00,0.50,
+KXTRUMPMENTION-26MAR27,dev,Remarks at FII PRIORITY Summit,2026-03-27,,,,none,,,no scheduled entry >= 0.5 (best 0.25)
+KXTRUMPMENTION-26MAR31,dev,Chicago Opening Night,2026-03-31,The President and The First Lady attend Chicago Opening Night,2026-03-31T23:30:00Z,2026-03-31T23:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26MAY01C,dev,Remarks at The Villages,2026-05-01,The President participates in an Event with Seniors,2026-05-01T19:00:00Z,2026-05-01T18:45:00Z,auto,0.50,,
+KXTRUMPMENTION-26MAY05,dev,The President signs a Proclamation,2026-05-05,The President signs a Proclamation,2026-05-05T14:30:00Z,2026-05-05T14:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26MAY06,dev,Military Mother's Day Event,2026-05-06,The President and The First Lady participate in a Military Mother's Day Event,2026-05-06T16:30:00Z,2026-05-06T16:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26MAY07,dev,Bilateral Meetings with the President of the Federative Republic of Brazil,2026-05-07,The President participates in a Greeting with the President of the Federative Republic of Brazil,2026-05-07T15:00:00Z,2026-05-07T14:45:00Z,auto,0.60,0.40,
+KXTRUMPMENTION-26MAY08,dev,Remarks at the Rose Garden,2026-05-08,The President delivers Remarks,2026-05-08T16:00:00Z,2026-05-08T15:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26MAY11,dev,Maternal Healthcare Event,2026-05-11,The President participates in a Maternal Healthcare Event,2026-05-11T14:30:00Z,2026-05-11T14:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26MAY12,dev,"Bilateral Meeting with the President of the People's Republic of China, inclusive of greeting",2026-05-12,,,,none,,,no scheduled entry >= 0.5 (best 0.14)
+KXTRUMPMENTION-26MAY14,dev,State Banquet with the President of the People's Republic of China,2026-05-14,The President participates in a State Banquet with the President of the People's Republic of China [Local: 6:00 PM],2026-05-14T10:00:00Z,2026-05-14T09:45:00Z,auto,1.00,0.60,
+KXTRUMPMENTION-26MAY14C,dev,"Bilateral Tea with the President of the People's Republic of China, inclusive of Greeting and Friendship Photo",2026-05-14,The President participates in a Greeting and Friendship Photo with the President of the People's Republic of China [Local: 11:30 AM 5/15],2026-05-15T03:30:00Z,2026-05-15T03:15:00Z,auto,0.67,0.56,
+KXTRUMPMENTION-26MAY18,dev,Healthcare Affordability Event,2026-05-18,The President participates in a Healthcare Affordability Event,2026-05-18T20:30:00Z,2026-05-18T20:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26MAY19,dev,Remarks at the Congressional Picnic,2026-05-19,The President and The First Lady deliver Remarks at the Congressional Picnic,2026-05-19T23:15:00Z,2026-05-19T23:00:00Z,auto,1.00,,
+KXTRUMPMENTION-26MAY20C,dev,keynote address at Coast Guard Academy Commencement,2026-05-20,The President delivers a Commencement Address to The United States Coast Guard Academy,2026-05-20T15:00:00Z,2026-05-20T14:45:00Z,auto,0.83,,
+KXTRUMPMENTION-26MAY21,dev,Announcement with the Administrator of the Environmental Protection Agency,2026-05-21,The President participates in an Announcement with the Administrator of the Environmental Protection Agency,2026-05-21T15:00:00Z,2026-05-21T14:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26MAY22,dev,"Remarks in Suffern, New York",2026-05-22,The President delivers remarks,2026-05-22T19:00:00Z,2026-05-22T18:45:00Z,auto,0.50,0.25,
+KXTRUMPMENTION-26MAY27,dev,THE PRESIDENT participates in a Cabinet Meeting,2026-05-27,The President participates in a Cabinet Meeting,2026-05-27T15:00:00Z,2026-05-27T14:45:00Z,auto,1.00,0.50,
+KXTRUMPMENTION-26MAY30,dev,Fox News: My View with Lara Trump,2026-05-30,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26NOV01,locked,"midterm rally in Dubuque, Iowa",2026-11-01,,,,none,,,no scheduled entry >= 0.5 (best 0.25)
+KXTRUMPMENTION-26NOV02,locked,remarks at the Lincoln Memorial Reflecting Pool,2026-11-02,The President delivers Remarks,2026-11-02T19:00:00Z,2026-11-02T18:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26NOV06,locked,remarks at the UP Summit,2026-11-06,,,,none,,,no scheduled entry >= 0.5 (best 0.33)
+KXTRUMPMENTION-26NOV08,locked,CBS: 60 Minutes,2026-11-08,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26OCT01,test,"Midterm Rally in Durant, Oklahoma",2026-10-01,,,,none,,,no scheduled entry >= 0.5 (best 0.25)
+KXTRUMPMENTION-26OCT02,test,"Midterm Rally in Mobile, Alabama",2026-10-02,,,,none,,,no scheduled entry >= 0.5 (best 0.25)
+KXTRUMPMENTION-26OCT03,test,"Midterm Rally in Vandalia, Ohio",2026-10-03,,,,none,,,no scheduled entry >= 0.5 (best 0.25)
+KXTRUMPMENTION-26OCT05,test,"Midterm Rally in Grand Island, Nebraska",2026-10-05,,,,none,,,no scheduled entry >= 0.5 (best 0.40)
+KXTRUMPMENTION-26OCT06,test,remarks at Anduril Industries,2026-10-06,,,,none,,,no scheduled entry >= 0.5 (best 0.33)
+KXTRUMPMENTION-26OCT07,test,"Midterm Rally in San Antonio, Texas",2026-10-07,,,,none,,,no scheduled entry >= 0.5 (best 0.40)
+KXTRUMPMENTION-26OCT08,test,A New Golden Age Summit,2026-10-08,The President participates in A New Golden Age Summit,2026-10-08T17:30:00Z,2026-10-08T17:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26OCT09,test,"Midterm Rally in Syracuse, New York",2026-10-09,,,,none,,,no scheduled entry >= 0.5 (best 0.20)
+KXTRUMPMENTION-26OCT12,test,his rally in Youngstown,2026-10-12,The President delivers Remarks,2026-10-12T23:00:00Z,2026-10-12T22:45:00Z,auto,0.50,,
+KXTRUMPMENTION-26OCT13,test,"Midterm Rally in Wasilla, Alaska",2026-10-13,"The President holds a political rally in Wasilla, Alaska [3:30 PM Local]",2026-10-13T23:30:00Z,2026-10-13T23:15:00Z,auto,0.75,,
+KXTRUMPMENTION-26OCT14,test,"Midterm Rally in Bullhead City, Arizona",2026-10-14,"The President holds a political rally in Bullhead City, Arizona [1:00 PM Local]",2026-10-14T20:00:00Z,2026-10-14T19:45:00Z,auto,0.80,0.20,
+KXTRUMPMENTION-26OCT16,locked,"Midterm Rally at Dalton, Georgia",2026-10-16,"The President holds a political rally in Dalton, Georgia",2026-10-16T18:45:00Z,2026-10-16T18:30:00Z,auto,0.75,0.25,
+KXTRUMPMENTION-26OCT17,locked,"Midterm Rally in Highland Heights, Kentucky",2026-10-17,"The President holds a political rally in Highland Heights, Kentucky",2026-10-17T18:00:00Z,2026-10-17T17:45:00Z,auto,0.80,0.20,
+KXTRUMPMENTION-26OCT19,locked,"Midterm Rally in Wichita, Kansas",2026-10-19,,,,none,,,no scheduled entry >= 0.5 (best 0.25)
+KXTRUMPMENTION-26OCT20,locked,"Midterm Rally in Greenville, North Carolina",2026-10-20,,,,none,,,no scheduled entry >= 0.5 (best 0.40)
+KXTRUMPMENTION-26OCT21,locked,"Midterm Rally in Clemson, South Carolina",2026-10-21,,,,none,,,no scheduled entry >= 0.5 (best 0.20)
+KXTRUMPMENTION-26OCT22,locked,"Midterm Rally in Sioux City, Iowa",2026-10-22,"The President holds a political rally in Sioux City, IA [6:00 PM Local]",2026-10-22T23:30:00Z,2026-10-22T23:15:00Z,auto,0.60,0.20,
+KXTRUMPMENTION-26OCT23,locked,"Midterm Rally in Fort Myers, Florida",2026-10-23,"The President holds a political rally in Fort Myers, Florida",2026-10-23T18:00:00Z,2026-10-23T17:45:00Z,auto,0.80,0.20,
+KXTRUMPMENTION-26OCT24,locked,"Midterm Rally in Macon, Georgia",2026-10-24,"The President holds a political rally in Perry, Georgia",2026-10-24T23:00:00Z,2026-10-24T22:45:00Z,auto,0.50,0.25,
+KXTRUMPMENTION-26OCT25,locked,"Midterm Rally in St. Clair County, Michigan",2026-10-25,,,,none,,,no scheduled entry >= 0.5 (best 0.40)
+KXTRUMPMENTION-26OCT26,locked,"Midterm Rally in Corinth, Mississippi",2026-10-26,"The President holds a political rally in Corinth, Mississippi [CDT Local]",2026-10-26T23:00:00Z,2026-10-26T22:45:00Z,auto,0.75,0.25,
+KXTRUMPMENTION-26OCT27,locked,"midterm rally in Lubbock, Texas",2026-10-27,"The President holds a political rally in Lubbock, Texas [6:00 PM Local]",2026-10-27T23:00:00Z,2026-10-27T22:45:00Z,auto,0.75,0.50,
+KXTRUMPMENTION-26OCT28,locked,"midterm rally in Chillicothe, Ohio",2026-10-28,"The President holds a political rally in Chillicothe, Ohio",2026-10-28T23:00:00Z,2026-10-28T22:45:00Z,auto,0.75,0.25,
+KXTRUMPMENTION-26OCT29,locked,"midterm rally in Rock Hill, South Carolina",2026-10-29,"The President holds a political rally in Rock Hill, South Carolina",2026-10-29T16:30:00Z,2026-10-29T16:15:00Z,auto,0.83,0.17,
+KXTRUMPMENTION-26OCT30,locked,"midterm rally in Daytona Beach, Florida",2026-10-30,"The President holds a political rally in Daytona Beach, Florida",2026-10-30T23:00:00Z,2026-10-30T22:45:00Z,auto,0.80,0.20,
+KXTRUMPMENTION-26SEP03,test,his GB News interview,2026-09-03,,,,none,,,no scheduled entry >= 0.5 (best 0.33)
+KXTRUMPMENTION-26SEP08,test,Remarks at Steel Across America,2026-09-08,The President participates in a Steel Across America Event,2026-09-08T14:35:00Z,2026-09-08T14:20:00Z,auto,0.75,,
+KXTRUMPMENTION-26SEP09,test,RNC Midterm Convention (Night 1),2026-09-09,The President attends the RNC Midterm Convention [6:00 PM Local],2026-09-09T23:00:00Z,2026-09-09T22:45:00Z,auto,0.75,,
+KXTRUMPMENTION-26SEP10,test,RNC Midterm Convention,2026-09-10,,,,none,,1.00,ambiguous: tie at 1.00
+KXTRUMPMENTION-26SEP10B,test,"The Ingraham Angle on September 10, 2026",2026-09-10,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26SEP11,test,"Fox News: The Ingraham Angle on Sep 11, 2026",2026-09-11,,,,none,,,no scheduled entry >= 0.5 (best 0.00)
+KXTRUMPMENTION-26SEP12,test,"Bilateral Meeting with the Taoiseach of Ireland on September 12, 2026",2026-09-12,The President participates in a Bilateral Meeting with the Taoiseach of Ireland [10:10 AM Local],2026-09-12T09:10:00Z,2026-09-12T08:55:00Z,auto,1.00,0.25,
+KXTRUMPMENTION-26SEP16,test,"remarks in Gastonia, North Carolina",2026-09-16,The President delivers Remarks,2026-09-16T23:00:00Z,2026-09-16T22:45:00Z,auto,0.50,0.25,
+KXTRUMPMENTION-26SEP17,test,Rose Garden dinner,2026-09-17,The President participates in a Rose Garden Dinner,2026-09-17T23:00:00Z,2026-09-17T22:45:00Z,auto,1.00,,
+KXTRUMPMENTION-26SEP18,test,Announcement on Healthcare,2026-09-18,The President makes an Announcement on Healthcare,2026-09-18T18:30:00Z,2026-09-18T18:15:00Z,auto,1.00,,
+KXTRUMPMENTION-26SEP21,test,Ribbon Cutting Ceremony,2026-09-21,The President participates in a Ribbon Cutting Ceremony,2026-09-21T17:45:00Z,2026-09-21T17:30:00Z,auto,1.00,,
+KXTRUMPMENTION-26SEP22,test,the United Nations General Assembly,2026-09-22,The President participates in a Bilateral Meeting with the Prime Minister of the United Kingdom of Great Britain,2026-09-22T15:45:00Z,2026-09-22T15:30:00Z,auto,0.50,0.50,
+KXTRUMPMENTION-26SEP24,test,remarks at Xi Jinping’s state arrival ceremony,2026-09-24,,,,none,,,no scheduled entry >= 0.5 (best 0.33)
+KXTRUMPMENTION-26SEP28,test,Oval Office announcement,2026-09-28,The President makes an announcement,2026-09-28T18:00:00Z,2026-09-28T17:45:00Z,auto,1.00,0.67,
+KXTRUMPMENTION-26SEP29,test,remarks at the Andrew W. Mellon Auditorium,2026-09-29,The President makes an announcement on America.gov,2026-09-29T14:00:00Z,2026-09-29T13:45:00Z,auto,0.80,,
+KXTRUMPMENTION-26SEP30,test,Hispanic Heritage Month Celebration,2026-09-30,The President hosts a Hispanic Heritage Month Celebration,2026-09-30T17:00:00Z,2026-09-30T16:45:00Z,auto,1.00,,
+KXVANCEMENTION-25DEC17,dev,remarks in Allentown Pennsylvania,2025-12-17,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-25DEC22,dev,Turning Point America Fest 2025,2025-12-22,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-25JUL16,dev,Remarks on the passage of the Big Beautiful Bill Act,2025-07-16,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-25NOV14,dev,Hannity on November 13th,2025-11-14,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-25NOV15,dev,Hannity on November 14th,2025-11-15,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-25NOV21,dev,discussion with Breitbart News on November 20th,2025-11-21,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-25NOV27,dev,remarks at Fort Campbell,2025-11-27,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-25OCT19,dev,speech at Camp Pendleton for Marine Corps' 250th Anniversary celebration on October 18th,2025-10-19,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-25OCT30,dev,Turning Point Tour at Ole Miss on October 29th,2025-10-30,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-25SEP17,dev,"Visit to the Manufacturing Facility in Howell, Michigan on September 17th",2025-09-17,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-25SEP21,dev,Charlie Kirk Memorial at State Farm Stadium on September 21st,2025-09-21,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-25SEP24,dev,"remarks at Roush Hangar in Concord, North Carolina on September 24th",2025-09-24,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26APR01,dev,Swearing-In Ceremony Of Colin McDonald,2026-04-01,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26APR07,dev,"bilateral meetings with Prime Minister Viktor Orbán, including joint press conference and/or Q&A",2026-04-07,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26APR07B,dev,Remarks on U.S.-Hungary Relations,2026-04-07,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26APR13,dev,Fox News: Special Report,2026-04-13,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26APR14,dev,Turning Point Tour at the University of Georgia,2026-04-14,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26APR29B,dev,Fox News: The Will Cain Show,2026-04-29,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26APR30,dev,Turning Point Tour at Iowa State University,2026-04-30,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26AUG05,test,Fox News: The Ingraham Angle,2026-08-05,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26AUG08,test,Fox News: Saturday in America,2026-08-08,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26AUG13,test,Fox News: The Will Cain Show,2026-08-13,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26AUG21,test,remarks on the Trump Administration’s America First economic agenda,2026-08-21,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26AUG24,test,remarks at a manufacturing facility in Maine,2026-08-24,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26AUG31,test,Remarks in Sterling Heights,2026-08-31,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26FEB05,dev,Critical Minerals Ministerial,2026-02-05,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26FEB18,dev,The Story with Martha MacCallum,2026-02-18,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26FEB26,dev,Actions to Combat Fraud in Taxpayer-Funded Programs,2026-02-26,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26FEB27,dev,"Remarks in Plover, Wisconsin",2026-02-27,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26JAN08,dev,Jesse Watters Primetime,2026-01-08,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26JAN09,dev,White House press briefing on January 8th,2026-01-09,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26JAN23,dev,"remarks in Toledo, Ohio",2026-01-23,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26JAN24,dev,remarks at March for Life,2026-01-24,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26JUL01,test,"Remarks in Virginia Beach, Virginia",2026-07-01,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26JUL08,test,remarks on the Trump Administration's work to combat fraud,2026-07-08,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26JUN04,test,Press Conference on Federal Enforcement Actions,2026-06-04,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26JUN08,test,Fox News: Jesse Watters Primetime,2026-06-08,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26JUN14,test,CBS Sunday Morning,2026-06-14,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26JUN15,test,Fox News: Hannity,2026-06-15,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26JUN16,test,The View,2026-06-16,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26JUN16B,test,Fox News: Fox & Friends,2026-06-16,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26JUN16C,test,Fox News: The Five,2026-06-16,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26JUN16D,test,Fox News: Gutfeld!,2026-06-16,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26JUN17,test,remarks on the Administration's crackdown on crime and fraud,2026-06-17,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26JUN17B,test,CBS Mornings,2026-06-17,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26JUN18,test,Press Briefing by the Vice President JD Vance,2026-06-18,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26JUN30,test,Fox News: The Ingraham Angle,2026-06-30,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26MAR03,dev,Fox News: Jesse Watters Primetime,2026-03-03,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26MAR27,dev,Meeting of the Task Force to Eliminate Fraud,2026-03-27,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26MAY05,dev,remarks at a manufacturing facility - Des Moines,2026-05-05,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26MAY13,dev,Press Conference on Anti-Fraud Initiatives,2026-05-13,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26MAY14,dev,Remarks in Maine,2026-05-14,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26MAY15,dev,Fraternal Order of Police's National Peace Officers' Memorial Service at the Capitol,2026-05-15,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26MAY16,dev,Fox News: Saturday in America,2026-05-16,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26MAY18,dev,remarks at Milbank Manufacturing Company,2026-05-18,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26MAY19,dev,White House Press Briefing,2026-05-19,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26MAY26,dev,Roundtable on Anti-Fraud Initiatives,2026-05-26,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26MAY28,dev,Commencement Address at the U.S. Air Force Academy,2026-05-28,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26MAY29,dev,JD VANCE Delivers Remarks in Denver,2026-05-29,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26NOV02,locked,"midterm rally in Rome, New York",2026-11-02,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26OCT01,test,"Midterm Rally in Lakeland, Florida",2026-10-01,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26OCT01B,test,Fox News: Hannity,2026-10-01,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26OCT05,test,"Midterm Rally in Fairbanks, Alaska",2026-10-05,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26OCT09,test,"Midterm Rally in Lima, Ohio",2026-10-09,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26OCT15,locked,"Midterm Rally in Monroe, Michigan",2026-10-15,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26OCT17,locked,CBS Things That Matter: A Town Hall With Vice President JD Vance,2026-10-17,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26OCT19,locked,"Midterm Rally in Hendersonville, North Carolina",2026-10-19,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26OCT20,locked,Oval Office announcement,2026-10-20,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26OCT21,locked,"Fraud Task Force Press Conference in Cincinnati, Ohio",2026-10-21,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26OCT26,locked,"Midterm Rally in Topeka, Kansas",2026-10-26,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26OCT26B,locked,"Midterm Rally in Belgrade, Montana",2026-10-26,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26OCT27,locked,"midterm rally in Howell, Michigan",2026-10-27,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26OCT29,locked,Fox News: town hall with JD Vance,2026-10-29,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26OCT29B,locked,"midterm rally in Weatherford, Texas",2026-10-29,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26OCT30,locked,"Fraud Task Force Press Conference in St. Cloud, Minnesota",2026-10-30,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26SEP03,test,press conference,2026-09-03,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26SEP09,test,RNC Midterm Convention,2026-09-09,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26SEP14,test,remarks on the Trump Administration’s crackdown on fraud in Kansas City,2026-09-14,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26SEP14B,test,Webco remarks in Olathe,2026-09-14,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26SEP18,test,"Midterm Rally in Council Bluffs, Iowa",2026-09-18,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26SEP21,test,"rally in Greensboro, North Carolina",2026-09-21,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26SEP29,test,MAHA Summit: In Conversation: Vice President JD Vance & Sec. Kennedy,2026-09-29,,,,none,,,no Vance schedule source yet (M2 search)
+KXVANCEMENTION-26SEP30,test,"Midterm Rally in Harlingen, Texas",2026-09-30,,,,none,,,no Vance schedule source yet (M2 search)

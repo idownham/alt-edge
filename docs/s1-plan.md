@@ -1,4 +1,16 @@
-# S1 plan — approved scope (2026-10-14), not started
+# S1 plan — approved scope (2026-10-14); **started 2026-11-09**
+
+> **2026-11-09 update (Ian approved, `decisions.md`):** the dates below were out of date (the slot opened 2026-10-28;
+> S1 started 2026-11-09). New build dates: **M1** pipeline + matcher + scoring code, counts only, Nov 9–12 · **M2**
+> transcripts, base-rate v1 on dev, tuning, Vance source decision, Nov 12–15 · **Freeze Nov 16** · test scored once
+> after Ian's OK, Nov 16–17 · write-up Nov 17–22. The dates in the criteria (extension through Nov 20, time box
+> Nov 22) are unchanged. Events after 2026-10-14 are locked like the test set. The original timeline table is kept
+> below for the record.
+>
+> **M1 status (2026-11-09):** done: #1 collector, #2 schedule mapping + T_ref prices (Trump), #4 matcher (all
+> contract examples as tests), the scoring/fee code from #6 (tested, not yet run on outcomes), #7 `status`. Code in
+> `src/bloodhound/`, run as `bloodhound <command>`. Not done yet: #3 transcripts, #3b Vance source (Factbase has no
+> Vance calendar: `/factbase/vance/calendar/` redirects), #5 model.
 
 *Proposed by Claude at the end of S0. Ian answered Q1–Q9 and confirmed criteria v2 on 2026-10-14 (`decisions.md`).
 Per the 2026-10-14 decision, nothing runs continuously before a slot opens. Every step below is a **one-off batch

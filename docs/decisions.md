@@ -41,3 +41,21 @@ No outcome data had been analysed when this was decided.
 - **Q9 Fees:** Ian checked kalshi.com/fee-schedule on 2026-10-14: taker 0.07·C·P·(1−P), ceil to the cent; no maker
   fee on `quadratic` series.
 **Change rule:** any later change to these criteria is recorded here, with the reason, before it is applied.
+
+---
+
+## 2026-11-09 — S1 started: new build dates; post-Oct-14 events locked; keyword event types
+**Context:** the slot opened when Osprey's Decision A came out STOP (2026-10-28). Ian asked on 2026-11-08 to start S1.
+The old S1 targets in `s1-plan.md` (Oct 25 prototype, Nov 8 test) have already passed.
+**Decision (Ian, 2026-11-09, approving Claude's proposed plan):**
+- **New build dates:** Milestone 1 (data pipeline, word matcher, scoring code, counts only) Nov 9–12. M2 (transcripts, base-rate
+  v1 on dev only, tuning, Vance source decision) Nov 12–15. **Freeze Nov 16**, with the commit hash recorded here. Test
+  set scored once, after Ian approves, Nov 16–17. Write-up Nov 17–22.
+- **The pre-registered criteria do not change.** The inconclusive extension still runs through 2026-11-20 and the
+  time box is still 2026-11-22. Because of the later start, a PASS will almost certainly leave the paper gate
+  **INCOMPLETE** on Nov 22, as Q7 already allows.
+- **Events whose first market closed after 2026-10-14** are in neither dev nor test. They are **locked like the test
+  set**: never used for tuning, and used only for the one inconclusive extension (spec: new events through 2026-11-20).
+- **Event type** (a model input) comes from fixed keyword rules on event titles (public before the event). Claude
+  writes and checks the rules on dev titles only, and they are logged as an AI-produced input (`CLAUDE.md` rule 4).
+**No outcome data had been analysed when this was decided.**

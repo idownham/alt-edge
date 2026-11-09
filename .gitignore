@@ -9,3 +9,7 @@ __pycache__/
 data/raw/
 data/transcripts/
 *.pem
+data/cache/
+data/bloodhound.db
+*.egg-info/
+*.db-journal
