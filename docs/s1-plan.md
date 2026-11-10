@@ -16,7 +16,7 @@
 > **M2 status (2026-11-09, started early):** #3b Vance: start times found (Kalshi milestones), no transcript list →
 > recommend dropping Vance for S1 (`evidence/s1-2026-11-09/vance_source.md`). #5 base-rate v1 + #6 dev backtest done
 > (`docs/results/dev-backtest-2026-11-09.md`): on dev-B the base rate alone loses to the market (Brier 0.230 vs
-> 0.161); a market + base-rate blend ties it (0.1614 vs 0.1609). **Frozen 2026-11-09** (Ian: blend), commit `bb92f3a`; test not yet scored.
+> 0.161); a market + base-rate blend ties it (0.1614 vs 0.1609). **Frozen 2026-11-09** (Ian: blend), commit `bb92f3a`. **Test scored once: INCONCLUSIVE** (−0.0017, CI crosses 0) → extension through Nov 20.
 
 *Proposed by Claude at the end of S0. Ian answered Q1–Q9 and confirmed criteria v2 on 2026-10-14 (`decisions.md`).
 Per the 2026-10-14 decision, nothing runs continuously before a slot opens. Every step below is a **one-off batch

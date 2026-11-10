@@ -82,3 +82,21 @@ chose not to try more features.
   can overrule.*
 - **The test set has not been scored.** It is scored once, only after Ian's separate OK.
 **No test or locked outcome data had been analysed when this was decided.**
+
+---
+
+## 2026-11-09 — Test set scored once: INCONCLUSIVE → the one pre-registered extension (through 2026-11-20)
+**Ian approved scoring ("Score test now").** Claude ran `bloodhound score --period test --score-test --frozen-hash
+bb92f3a` once, at 2026-11-10T03:17Z UTC (Nov 9 ET). Report: `docs/results/score-test-2026-11-10.md`; marker:
+`docs/results/scored-test.json`.
+- **Frozen blend, test:** 60 events / 1,640 markets. Brier 0.1614 vs market 0.1631; diff −0.0017, 95% event-clustered
+  CI [−0.0043, +0.0010]. Log loss 0.4882 vs 0.4918.
+- Gate check: size floor met; point estimate better; upper bound not < 0 → **INCONCLUSIVE** (spec v2).
+- Base rate alone, reported only: 0.2336 vs 0.1631 (+0.0706), far worse than the market.
+**What follows is not a new decision; it is the pre-registered rule.** There is no re-tuning on the test set. The
+one extension: score the same frozen model (`bb92f3a`) on new events through 2026-11-20 (the "locked" period). Then
+PASS or STOP is decided on test + extension together. This means collecting the locked-period markets, prices and
+transcripts after Nov 20 settle, then scoring the locked period once. The time box stays 2026-11-22.
+**Open (for Ian before the extension is scored):** how "together" is computed. Proposed: pool test + locked markets
+into one event-clustered bootstrap with the same gate rules, which is the literal reading of the spec. It must be
+written down here before the locked outcomes are read.

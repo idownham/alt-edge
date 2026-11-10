@@ -12,7 +12,8 @@ Vance source) Nov 12–15 → **freeze Nov 16** → test set scored **once** aft
 outcomes are refused by `db.outcomes()` unless `--score-test` + the frozen hash. Criteria v2 (`docs/spec.md`, confirmed
 2026-10-14) unchanged. All collection is hand-run, paced batches (`bloodhound collect-*`); nothing runs continuously;
 `bloodhound status` reports counts. **Frozen 2026-11-09: blend-v1, commit `bb92f3a`** (`docs/results/frozen_model.json`, `decisions.md`); Vance dropped.
-Next: test scored **once** with `bloodhound score --period test --score-test --frozen-hash bb92f3a`, only after Ian's OK. Plan: `docs/s1-plan.md`. S0 findings: `docs/s0-research.md`. Update this
+**Test scored once 2026-11-09: INCONCLUSIVE** (blend 0.1614 vs market 0.1631, CI [−0.0043, +0.0010]). Next: the one
+extension, scoring the same model on events through 2026-11-20 (~Nov 21), then PASS/STOP on test + extension; time box Nov 22. Plan: `docs/s1-plan.md`. S0 findings: `docs/s0-research.md`. Update this
 line when the stage changes.
 
 ## Hard rules

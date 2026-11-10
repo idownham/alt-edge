@@ -1,0 +1,7 @@
+{
+ "period": "test",
+ "frozen_hash": "bb92f3a",
+ "verdict": "INCONCLUSIVE (model better on the point estimate, 95% CI crosses 0)",
+ "n_markets": 1640,
+ "n_events": 60
+}

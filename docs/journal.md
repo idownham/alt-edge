@@ -245,3 +245,38 @@ the blend ("Freeze the blend"). His verdicts on the event-type rules and on drop
 
 **Next:** Ian's OK → `bloodhound score --period test --score-test --frozen-hash bb92f3a` (once) → PASS / STOP /
 INCONCLUSIVE → write-up.
+
+---
+
+## 2026-11-09 (night) — ⭐ Test set scored once: INCONCLUSIVE
+
+**Work:** with Ian's OK ("Score test now"), the frozen blend (`bb92f3a`) was scored **once** on the held-out test set.
+The guard accepted the freeze hash and the corpus fingerprint. Report `docs/results/score-test-2026-11-10.md` (UTC
+date in the name).
+
+| Test (60 events / 1,640 markets) | Brier model | Brier market | diff [95% CI] |
+|---|---|---|---|
+| frozen blend | 0.1614 | 0.1631 | −0.0017 [−0.0043, +0.0010] |
+| base rate alone (reported only) | 0.2336 | 0.1631 | +0.0706 [+0.054, +0.087] |
+
+**Observation:**
+- The test result matches what was written down before scoring: likely STOP or INCONCLUSIVE.
+- The blend is slightly better than the market, but not provably so.
+- The market's own reliability on test is a little high in the 0.3–0.7 range. For example, the 0.4–0.5 bin has a
+  mean price of 0.446 and a YES rate of 0.323. The blend pulls those prices down a bit.
+- By event type the differences are small and mixed, with few events per type.
+- The transcript base rate alone is clearly worse than the market (dev and test agree).
+
+**⭐ Evidence → decision → consequence:** the test diff is −0.0017 with a CI crossing 0 (evidence). The spec's
+pre-registered INCONCLUSIVE rule applies, with no re-tuning (decision). The one extension runs: the same frozen model
+is scored on events through 2026-11-20, then PASS/STOP on test + extension together. The base rate's weak standalone
+showing is recorded as a finding, whatever the final verdict (consequence).
+
+**AI use + Ian's judgment:** Claude ran the scorer and wrote this entry. Ian **accepted** scoring now. Ian still
+needs to confirm the pooling rule for the extension before the locked outcomes are read.
+
+**Next (after Nov 20 markets settle, ~Nov 21):**
+1. Run `collect-markets`, then `collect-schedule --refresh-last`, `map-events`, `collect-prices` and
+   `collect-transcripts`.
+2. Score the locked period once, then the pooled test + locked verdict.
+3. Write-up by Nov 22.
