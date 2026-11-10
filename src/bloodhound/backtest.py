@@ -219,3 +219,94 @@ def write_report(res: dict, path_md, path_json) -> None:
     path_md.write_text("\n".join(L))
     slim = {k: v for k, v in res.items() if k != "records"}
     path_json.write_text(json.dumps(slim, indent=1))
+
+
+# ---------------------------------------------------------------------------------------------------
+# Frozen model (decision 2026-11-09: Ian chose the blend) and the one-time scoring of a locked period.
+
+FROZEN_FILE = db.ROOT / "docs" / "results" / "frozen_model.json"
+SCORED_MARK = db.ROOT / "docs" / "results" / "scored-{period}.json"
+CORPUS_CUTOFF = "2026-10-14"  # corpus fingerprint covers transcripts up to the end of the test period
+
+
+def corpus_fingerprint(docs, up_to: str = CORPUS_CUTOFF) -> dict:
+    import hashlib
+    sel = sorted((d.date, d.url, d.seconds, len(d.tokens)) for d in docs if d.date <= up_to)
+    h = hashlib.sha256(json.dumps(sel).encode()).hexdigest()
+    return {"up_to": up_to, "n_docs": len(sel), "sha256": h}
+
+
+def load_frozen(path=FROZEN_FILE) -> tuple[Params, list[float], dict]:
+    fz = json.loads(path.read_text())
+    return Params(**fz["base_params"]), fz["blend_weights"], fz
+
+
+def gate_verdict(n_markets: int, n_events: int, brier_model: float, brier_market: float, hi95: float) -> str:
+    """Spec v2 calibration gate (KXTRUMPMENTION)."""
+    if n_markets < 300 or n_events < 30:
+        return "STOP (fewer than 300 markets / 30 events after filters)"
+    if brier_model >= brier_market:
+        return "STOP (model Brier >= market Brier)"
+    if hi95 < 0:
+        return "PASS (calibration gate)"
+    return "INCONCLUSIVE (model better on the point estimate, 95% CI crosses 0)"
+
+
+def score_period(conn: sqlite3.Connection, docs, period: str, *, score_test: bool = False,
+                 frozen_hash: str | None = None, frozen_path=FROZEN_FILE) -> dict:
+    """Score the frozen blend on one period. test/locked: the outcomes() guard applies, and each
+    locked period can be scored only once (a marker file is written)."""
+    from .model import predict
+    mark = SCORED_MARK.with_name(SCORED_MARK.name.format(period=period))
+    if period != "dev" and mark.exists():
+        raise db.LockedPeriodError(f"{period} was already scored ({mark.name}); it is scored exactly once.")
+    base, w, fz = load_frozen(frozen_path)
+    fp = corpus_fingerprint(docs)
+    if fp != fz["corpus"]:
+        raise RuntimeError(f"transcript corpus differs from the freeze: {fp} != {fz['corpus']}")
+    markets = load_markets(conn, period)
+    outcomes = db.outcomes(conn, period, score_test=score_test, frozen_hash=frozen_hash)
+    recs = []
+    for m in markets:
+        if m["ticker"] not in outcomes:
+            continue
+        p_base = predict(docs, m["word"], m["event_date"], m["etype"], base)[0]
+        recs.append({**m, "y": 1 if outcomes[m["ticker"]] == "yes" else 0, "p_base": p_base,
+                     "p_blend": blend_prob(w, float(m["p_mkt"]), p_base)})
+    blend = summarize(f"frozen blend, {period}", recs, "p_blend")
+    res = {"period": period, "frozen_hash": frozen_hash, "frozen_model": fz["model"], "corpus": fp,
+           "blend": blend, "base_alone": summarize(f"base alone, {period}", recs, "p_base"),
+           "by_type_blend": by_type(recs, "p_blend"),
+           "verdict": gate_verdict(blend["n_markets"], blend["n_events"], blend["brier_model"],
+                                   blend["brier_market"], blend["hi95"])}
+    if period != "dev":
+        mark.write_text(json.dumps({"period": period, "frozen_hash": frozen_hash, "verdict": res["verdict"],
+                                    "n_markets": blend["n_markets"], "n_events": blend["n_events"]}, indent=1))
+    return res
+
+
+def write_score_report(res: dict, path_md, path_json) -> None:
+    L = [f"# Frozen model scored on {res['period']} (generated {res['generated_utc']})", "",
+         f"Model: {res['frozen_model']} · freeze commit `{res['frozen_hash']}` · corpus {res['corpus']['n_docs']} "
+         f"transcripts ≤ {res['corpus']['up_to']} (sha256 {res['corpus']['sha256'][:12]})", "",
+         f"**Verdict: {res['verdict']}**", "",
+         "| Model | events | markets | Brier model | Brier market | diff | 95% CI | log loss model | log loss market |",
+         "|---|---|---|---|---|---|---|---|---|"]
+    for r in (res["blend"], res["base_alone"]):
+        L.append(f"| {r['name']} | {r['n_events']} | {r['n_markets']} | {r['brier_model']:.4f} | "
+                 f"{r['brier_market']:.4f} | {r['diff']:+.4f} | [{r['lo95']:+.4f}, {r['hi95']:+.4f}] | "
+                 f"{r['logloss_model']:.4f} | {r['logloss_market']:.4f} |")
+    L += ["", "Base alone is reported only; the gate is on the frozen blend.", "",
+          "### Reliability, frozen blend (model | market)", "",
+          "| bin | n model | mean p | freq | n market | mean p | freq |", "|---|---|---|---|---|---|---|"]
+    for a, b in zip(res["blend"]["reliability_model"], res["blend"]["reliability_market"]):
+        L.append(f"| {a['bin']} | {a['n']} | {a['mean_p']:.3f} | {a['freq']:.3f} | {b['n']} | {b['mean_p']:.3f} | "
+                 f"{b['freq']:.3f} |")
+    L += ["", "### By event type, frozen blend", "", "| type | events | markets | Brier model | Brier market |",
+          "|---|---|---|---|---|"]
+    for t in res["by_type_blend"]:
+        L.append(f"| {t['etype']} | {t['n_events']} | {t['n_markets']} | {t['brier_model']:.4f} | "
+                 f"{t['brier_market']:.4f} |")
+    path_md.parent.mkdir(parents=True, exist_ok=True)
+    path_md.write_text("\n".join(L) + "\n")
+    path_json.write_text(json.dumps(res, indent=1))

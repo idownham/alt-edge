@@ -85,6 +85,21 @@ def cmd_tune_dev(args):
     print(out.with_suffix(".md").read_text())
 
 
+def cmd_score(args):
+    """Score the frozen blend. dev: open. test/locked: needs --score-test and the freeze hash; once only."""
+    from pathlib import Path
+    from .backtest import score_period, write_score_report
+    from .model import load_corpus
+    conn = db.connect(args.db)
+    docs = load_corpus(conn)
+    res = score_period(conn, docs, args.period, score_test=args.score_test, frozen_hash=args.frozen_hash)
+    res["generated_utc"] = utc_now_iso()
+    out = Path(args.out or db.ROOT / "docs" / "results" / f"score-{args.period}-{res['generated_utc'][:10]}")
+    write_score_report(res, out.with_suffix(".md"), out.with_suffix(".json"))
+    _log_run(conn, "score", res["generated_utc"], 0, f"{args.period}: {res['verdict']}")
+    print(out.with_suffix(".md").read_text())
+
+
 def cmd_status(args):
     from .status import status
     print(status(db.connect(args.db)))
@@ -118,6 +133,12 @@ def main(argv=None):
     d.add_argument("--gap-days", type=int, default=1)
     d.add_argument("--out", default=str(db.ROOT / "docs" / "results" / "dev-backtest"))
     d.set_defaults(fn=cmd_tune_dev)
+    sc = sub.add_parser("score", help="score the frozen model on one period")
+    sc.add_argument("--period", required=True, choices=("dev", "test", "locked"))
+    sc.add_argument("--score-test", action="store_true", help="required for test/locked (Ian's OK first)")
+    sc.add_argument("--frozen-hash", default=None)
+    sc.add_argument("--out", default=None)
+    sc.set_defaults(fn=cmd_score)
     sub.add_parser("status").set_defaults(fn=cmd_status)
     args = p.parse_args(argv)
     args.fn(args)

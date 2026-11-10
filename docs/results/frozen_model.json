@@ -1,0 +1,35 @@
+{
+ "model": "blend-v1 (market + base rate, logistic)",
+ "decided": "Ian, 2026-11-09: 'Freeze the blend'",
+ "formula": "p = 1/(1+exp(-(w0 + w1*logit(p_mkt) + w2*logit(p_base)))), logits clipped to [0.01, 0.99]",
+ "base_params": {
+  "pool": "all",
+  "last_n": 5,
+  "min_seconds": 900,
+  "prior_strength": 8.0,
+  "prior_mean": 0.4873362445414847,
+  "gap_days": 1
+ },
+ "blend_weights": [
+  -0.08600875740351821,
+  1.1451696700157723,
+  0.45066555613320575
+ ],
+ "logit_clip": 0.01,
+ "event_type_rules": "event-types-v1 (2026-11-09)",
+ "fit": "base params chosen and blend weights fit on dev-A only (first 57 dev events, 1,145 markets); kept exactly as validated on dev-B (no refit on all dev)",
+ "dev_B_check": {
+  "n_events": 57,
+  "n_markets": 1438,
+  "brier_model": 0.1613559512270999,
+  "brier_market": 0.16091112656467316,
+  "diff": 0.00044482466242675735,
+  "lo95": -0.0021028327187294087,
+  "hi95": 0.003079721185963044
+ },
+ "corpus": {
+  "up_to": "2026-10-14",
+  "n_docs": 921,
+  "sha256": "59814170f0db579987a351437cc28b2b2477ad003b5f9b94f56021c9ff37ca4b"
+ }
+}

@@ -40,13 +40,13 @@ def test_test_and_locked_outcomes_refused(conn, period):
     with pytest.raises(db.LockedPeriodError):
         db.outcomes(conn, period, score_test=True)  # no hash
     with pytest.raises(db.LockedPeriodError):
-        db.outcomes(conn, period, score_test=True, frozen_hash="abc", head_fn=lambda: None)  # dirty tree
+        db.outcomes(conn, period, score_test=True, frozen_hash="abc1234", check_fn=lambda h: None)  # dirty / changed
     with pytest.raises(db.LockedPeriodError):
-        db.outcomes(conn, period, score_test=True, frozen_hash="abc", head_fn=lambda: "def123")
+        db.outcomes(conn, period, score_test=True, frozen_hash="abc1234", check_fn=lambda h: "def1234567")
 
 
 def test_test_outcomes_with_matching_frozen_hash(conn):
-    out = db.outcomes(conn, "test", score_test=True, frozen_hash="abc1", head_fn=lambda: "abc1234")
+    out = db.outcomes(conn, "test", score_test=True, frozen_hash="abc1234", check_fn=lambda h: "abc1234567")
     assert out == {"E-TEST-W": "yes"}
 
 
