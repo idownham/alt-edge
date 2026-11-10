@@ -280,3 +280,34 @@ needs to confirm the pooling rule for the extension before the locked outcomes a
    `collect-transcripts`.
 2. Score the locked period once, then the pooled test + locked verdict.
 3. Write-up by Nov 22.
+
+---
+
+## 2026-11-09 (late) — Extension pooling rule fixed before any extension outcome is read
+
+**Decision (Ian):** "Yes, pool them". The rule is recorded in `decisions.md`:
+- **Extension set:** Trump events with first close after Oct 14, up to and including Nov 20.
+- **Verdict:** one event-clustered bootstrap over test + extension.
+- **After the extension:** only PASS or STOP; a pooled result that is still inconclusive counts as STOP.
+
+**Work:** `scripts/score_extension.py` sits outside `src/`, so the freeze guard still holds, and it reuses only the
+frozen functions. It refuses to run:
+- before 2026-11-21 UTC;
+- if the test set hasn't been scored;
+- a second time;
+- if the transcripts up to Oct 14 have changed;
+- if the re-derived test Brier doesn't reproduce 0.1614 / 0.1631.
+
+4 new tests; 189 pass, plus the 5 expected failures. **No locked outcomes were read.**
+
+**AI use + Ian's judgment:** Claude proposed pooling and wrote the script. Ian **accepted** pooling. Claude also
+wrote two readings into the rule: "a pooled result that is still inconclusive counts as STOP", and "the window is
+measured by first-close UTC date". Both follow the spec's "then PASS or STOP" and the split rule. Ian can revise
+them before Nov 21.
+
+**Next (~Nov 21):**
+1. Run `collect-markets`, then `collect-schedule --refresh-last`, `map-events`, `collect-prices` and
+   `collect-transcripts`.
+2. Commit.
+3. Run `python scripts/score_extension.py --frozen-hash bb92f3a`.
+4. Write-up by Nov 22.

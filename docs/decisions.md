@@ -100,3 +100,27 @@ transcripts after Nov 20 settle, then scoring the locked period once. The time b
 **Open (for Ian before the extension is scored):** how "together" is computed. Proposed: pool test + locked markets
 into one event-clustered bootstrap with the same gate rules, which is the literal reading of the spec. It must be
 written down here before the locked outcomes are read.
+
+---
+
+## 2026-11-09 — Extension pooling rule (before any locked/extension outcome is read)
+**Decision (Ian, 2026-11-09):** "Yes, pool them." The final S1 verdict after the INCONCLUSIVE test result is computed
+like this:
+- **Extension set:** KXTRUMPMENTION events in the locked period, i.e. first market closed after 2026-10-14, **and on
+  or before 2026-11-20** (UTC date, same rule as the split). The spec-v2 filters apply unchanged: word markets,
+  Factbase start time, two-sided quote with spread ≤ 10¢ at T_ref. Events closing after Nov 20 are not used.
+- **Model:** the frozen blend, `bb92f3a`, unchanged. The data pipeline may collect new markets, prices and
+  transcripts, but the model files may not change; the freeze guard enforces this. Transcripts up to 2026-10-14 must
+  still match the fingerprint.
+- **Pooled verdict:** the test and extension markets go into **one** event-clustered bootstrap (10,000 draws, seed
+  20261014). The same gate decides PASS or STOP: Brier model < market, and upper 95% bound < 0. Because the spec
+  allows only PASS or STOP after the extension, a pooled result that is still "inconclusive" counts as **STOP (no
+  demonstrated edge)**. The ≥ 300 / ≥ 30 size floor applies to the pooled set. The extension alone is reported
+  but does not decide.
+- **How:** `scripts/score_extension.py`. It lives outside `src/`, so adding it doesn't break the freeze, and it
+  reuses only the frozen functions. It:
+  - re-derives the test predictions with the frozen model, re-reading the test outcomes through the same hash guard;
+  - refuses if they don't reproduce the recorded test Brier scores (0.1614 / 0.1631);
+  - scores the extension **once** (marker `scored-locked.json`);
+  - refuses to run before 2026-11-21 UTC.
+**No locked or extension outcome data had been read when this was decided.**

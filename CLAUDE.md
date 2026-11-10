@@ -13,7 +13,8 @@ outcomes are refused by `db.outcomes()` unless `--score-test` + the frozen hash.
 2026-10-14) unchanged. All collection is hand-run, paced batches (`bloodhound collect-*`); nothing runs continuously;
 `bloodhound status` reports counts. **Frozen 2026-11-09: blend-v1, commit `bb92f3a`** (`docs/results/frozen_model.json`, `decisions.md`); Vance dropped.
 **Test scored once 2026-11-09: INCONCLUSIVE** (blend 0.1614 vs market 0.1631, CI [−0.0043, +0.0010]). Next: the one
-extension, scoring the same model on events through 2026-11-20 (~Nov 21), then PASS/STOP on test + extension; time box Nov 22. Plan: `docs/s1-plan.md`. S0 findings: `docs/s0-research.md`. Update this
+extension (pooling rule in `decisions.md`): ~Nov 21 collect, commit, run `scripts/score_extension.py --frozen-hash bb92f3a`
+(once; pooled test + events through Nov 20 → PASS or STOP); time box Nov 22. Plan: `docs/s1-plan.md`. S0 findings: `docs/s0-research.md`. Update this
 line when the stage changes.
 
 ## Hard rules
