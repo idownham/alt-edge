@@ -11,8 +11,8 @@ rule-aware matcher, scoring code, counts only) Nov 9–12 → M2 (transcripts, b
 Vance source) Nov 12–15 → **freeze Nov 16** → test set scored **once** after Ian's OK. Test and post-Oct-14 ("locked")
 outcomes are refused by `db.outcomes()` unless `--score-test` + the frozen hash. Criteria v2 (`docs/spec.md`, confirmed
 2026-10-14) unchanged. All collection is hand-run, paced batches (`bloodhound collect-*`); nothing runs continuously;
-`bloodhound status` reports counts. **M2 started 2026-11-09:** base-rate v1 + dev backtest done (`docs/results/`);
-freeze candidate (base alone vs market blend) and dropping Vance await Ian. Plan: `docs/s1-plan.md`. S0 findings: `docs/s0-research.md`. Update this
+`bloodhound status` reports counts. **Frozen 2026-11-09: blend-v1, commit `bb92f3a`** (`docs/results/frozen_model.json`, `decisions.md`); Vance dropped.
+Next: test scored **once** with `bloodhound score --period test --score-test --frozen-hash bb92f3a`, only after Ian's OK. Plan: `docs/s1-plan.md`. S0 findings: `docs/s0-research.md`. Update this
 line when the stage changes.
 
 ## Hard rules

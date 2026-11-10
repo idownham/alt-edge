@@ -59,3 +59,26 @@ The old S1 targets in `s1-plan.md` (Oct 25 prototype, Nov 8 test) have already p
 - **Event type** (a model input) comes from fixed keyword rules on event titles (public before the event). Claude
   writes and checks the rules on dev titles only, and they are logged as an AI-produced input (`CLAUDE.md` rule 4).
 **No outcome data had been analysed when this was decided.**
+
+---
+
+## 2026-11-09 — Model frozen: blend-v1 (freeze commit `bb92f3a23e843af48993bbfac12490aa7189f785`)
+**Decision (Ian, 2026-11-09):** "Freeze the blend." It was chosen from the two dev candidates in
+`docs/results/dev-backtest-2026-11-09.md`. The freeze happens on Nov 9 instead of the planned Nov 16, because Ian
+chose not to try more features.
+- **Frozen model:** `docs/results/frozen_model.json`.
+  - p = logistic(−0.0860 + 1.1452·logit(p_mkt) + 0.4507·logit(p_base)).
+  - p_base: all event types, the last 5 earlier transcripts with ≥ 15 min of Trump speech, Beta prior with
+    m = 0.487 and s = 8. Transcript date must be before the event's ET date.
+  - Event types: event-types-v1.
+  - Fit on dev-A only, and kept exactly as validated on dev-B (Brier 0.1614 vs market 0.1609).
+- **Freeze commit:** `bb92f3a`. Scoring test or locked outcomes needs `bloodhound score --period test --score-test
+  --frozen-hash bb92f3a`. The guard refuses if `src/`, `pyproject.toml` or the frozen-model file differ from
+  that commit, or if the tree is dirty. The transcript corpus up to 2026-10-14 is fingerprinted (921 transcripts,
+  sha256 `59814170f0db…`); a different corpus is refused. Each locked period can be scored once (marker file).
+- **Gate:** unchanged (spec v2), applied to the frozen blend. "Base rate alone" is reported but doesn't gate.
+- **Vance:** dropped for S1 (Q3a). Start times exist (Kalshi milestones), but no Vance transcript source was found
+  (`docs/evidence/s1-2026-11-09/vance_source.md`). *Claude's recommendation, carried with this decision; Ian
+  can overrule.*
+- **The test set has not been scored.** It is scored once, only after Ian's separate OK.
+**No test or locked outcome data had been analysed when this was decided.**

@@ -212,3 +212,36 @@ Ian's, below).
 **Next:** Ian picks the freeze candidate (blend or base alone; optionally one more pre-declared dev-only feature,
 e.g. "word appears in the event title", tried Nov 12–15). Freeze Nov 16 with the hash in `decisions.md` → Ian's OK →
 test scored once.
+
+---
+
+## 2026-11-09 (evening) — Model frozen: blend-v1
+
+**Work:** Ian chose "Freeze the blend". Claude added:
+- the frozen-model file (`docs/results/frozen_model.json`);
+- the scorer, `bloodhound score --period dev|test|locked`, which gives the gate verdict per spec v2 and writes a
+  dated report;
+- a corpus fingerprint;
+- a "scored once" marker.
+
+The outcome guard now checks that the model files are byte-identical to the freeze commit, rather than requiring
+HEAD to *be* the freeze commit. That way `decisions.md` can record the hash after the freeze. New tests run against a
+throwaway git repo. Total: 185 pass, plus the 5 expected failures. Freeze commit
+[`bb92f3a`](https://github.com/idownham/alt-edge/commit/bb92f3a23e843af48993bbfac12490aa7189f785), recorded in
+`decisions.md`.
+
+**Observation:** the frozen blend scored on all of dev reads 0.1633 vs the market's 0.1648 (−0.0015, 95% CI
+[−0.0039, +0.0010]). That is in-sample on dev-A and out-of-sample on dev-B. The dev-B part alone is +0.0004, so the
+test result will most likely be STOP or INCONCLUSIVE. This is written down before the test is scored.
+
+**Decision:**
+- The blend is frozen. Its parameters are kept exactly as validated on dev-B; there is no refit on all of dev. Claude
+  chose this so the frozen model is the one that was checked.
+- The freeze moved from Nov 16 to Nov 9.
+- Vance is dropped for S1.
+
+**AI use + Ian's judgment:** Claude proposed the blend, the no-refit choice and the guard change. Ian **accepted**
+the blend ("Freeze the blend"). His verdicts on the event-type rules and on dropping Vance are still pending.
+
+**Next:** Ian's OK → `bloodhound score --period test --score-test --frozen-hash bb92f3a` (once) → PASS / STOP /
+INCONCLUSIVE → write-up.
