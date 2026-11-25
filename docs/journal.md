@@ -311,3 +311,35 @@ them before Nov 21.
 2. Commit.
 3. Run `python scripts/score_extension.py --frozen-hash bb92f3a`.
 4. Write-up by Nov 22.
+
+---
+
+## 2026-11-25 — Extension collection BLOCKED: Factbase redesign (not scored)
+
+**Work:** started the one pre-registered extension (pooling rule, 2026-11-09):
+- `collect-markets` ran: 12 Kalshi requests, no 429. Locked Trump events with first close ≤ Nov 20: 19 events /
+  712 markets (counts only).
+- `collect-schedule --refresh-last` for November failed with **HTTP 404**. Factbase has been redesigned. The monthly
+  calendar pages are gone, and the calendar now loads from a JSON feed. Transcript pages no longer contain the text,
+  so the frozen parser finds 0 segments.
+- Evidence: `docs/evidence/s1-2026-11-25/source_change.md`. Status snapshots are saved before and after
+  `collect-markets`.
+
+**Observation:**
+- The new feed matches the old calendar for 2,113 of the 2,116 timed entries from Jun 1 to Nov 8.
+- Only **2 extension events** first closed Nov 9–20. 11 events / 403 markets (Oct 15 – Nov 8) already have start
+  times and prices from the Nov 9 cache.
+- The pooled floor is met either way: 71 events / 2,043 markets.
+
+**Decision:** none yet. **The extension was not scored and no locked outcome was read.** Claude stopped instead of
+writing new collection code, because changing how the extension set is built needs Ian's dated decision first. The
+options for Ian:
+- **(A)** An adapter script outside `src/` (JSON calendar feed + the new transcript source), checked against the
+  old calendar before use.
+- **(B)** Score with what the frozen pipeline has: the 2 Nov 9–20 events drop out as "no scheduled start time".
+- **(C)** Stop without the extension.
+
+Whichever is chosen, scoring now happens after the Nov 22 time box, which is late.
+
+**AI use + Ian's judgment:** Claude ran the collection, diagnosed the source change and wrote this entry.
+Ian's judgment: (to fill in).
