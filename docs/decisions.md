@@ -124,3 +124,22 @@ like this:
   - scores the extension **once** (marker `scored-locked.json`);
   - refuses to run before 2026-11-21 UTC.
 **No locked or extension outcome data had been read when this was decided.**
+
+---
+
+## 2026-11-25 — Extension built with the frozen pipeline as it is (option B), after the Factbase redesign
+**Decision (Ian, 2026-11-25, HQ chat):** "B: score now".
+**Reason:** rollcall.com (Factbase) was redesigned before the extension was collected:
+- the monthly calendar pages now return HTTP 404;
+- transcript text is no longer in the HTML (the frozen parser finds 0 segments).
+Evidence: `docs/evidence/s1-2026-11-25/source_change.md`, commit `7b7ac57`. No adapter is written.
+**What it means:**
+- The extension uses the data the frozen pipeline already has: the calendar cache from 2026-11-09 and transcripts
+  through 2026-11-08, with Kalshi markets refreshed on 2026-11-25.
+- The pooling rule's eligibility filters apply unchanged. The 2 events whose first market closed Nov 9–20 have no
+  Factbase start time, so they drop out.
+- Extension: **11 events / 403 markets** (first close Oct 15 – Nov 8). Pooled with test: **71 events / 2,043
+  markets**, so the ≥ 300 / ≥ 30 floor is met.
+- Scoring runs on 2026-11-25. That is after the Nov 21 earliest-run date and the Nov 22 time box, but the
+  extension window (closes through Nov 20) was fixed in advance.
+**No locked or extension outcome data had been read when this was decided.**
