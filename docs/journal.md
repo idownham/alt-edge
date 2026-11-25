@@ -343,3 +343,36 @@ Whichever is chosen, scoring now happens after the Nov 22 time box, which is lat
 
 **AI use + Ian's judgment:** Claude ran the collection, diagnosed the source change and wrote this entry.
 Ian's judgment: (to fill in).
+
+---
+
+## 2026-11-25 (later) — Extension scored once → S1 verdict STOP (no demonstrated edge) ⚑ evidence → decision → consequence
+
+**Ian's choice:** after the Factbase blocker (entry above), Ian chose **option B** in the HQ chat: "B: score now".
+Claude recorded it in `decisions.md` before scoring (commit `7418652`), with the counts: 11 / 403 extension,
+71 / 2,043 pooled. No outcomes had been read at that point.
+
+**Work:**
+- Ran `python scripts/score_extension.py --frozen-hash bb92f3a` **once**, at 2026-11-25T05:52:11Z. The freeze guard
+  and the corpus fingerprint passed, and the re-derived test Brier reproduced 0.1614 / 0.1631.
+- Results: `docs/results/score-extension-2026-11-25.md` / `.json`; marker: `scored-locked.json`.
+
+**Evidence:**
+- Pooled: 71 events / 2,043 markets. Model 0.1568 vs market 0.1580; diff −0.0011, 95% CI [−0.0035, +0.0012].
+- Extension alone: 0.1383 vs 0.1372 (+0.0011).
+- Base rate alone, pooled: 0.2290.
+
+**Decision:** the upper bound is not < 0, so the pooled result is inconclusive. Under the pooling rule that makes
+it **STOP: no demonstrated edge**. Ian confirms.
+
+**Consequence:**
+- The mention-market calibration gate is closed for S1.
+- The paper gate stays INCOMPLETE and is not run. There's no order code.
+- What remains is the class write-up.
+- Scoring was late: after Nov 21 and the Nov 22 time box. The extension window was fixed in advance.
+
+**Observation:** the blend tracks the market closely. On the new events it was slightly worse than the market, and
+transcript base rates alone are far worse. The careful homework didn't add measurable calibration over the price.
+
+**AI use + Ian's judgment:** Claude ran the scorer, wrote the results doc and drafted the decision entry. The verdict
+follows the pre-registered rule. Ian's judgment: (to fill in).
