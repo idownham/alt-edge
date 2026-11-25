@@ -342,7 +342,7 @@ options for Ian:
 Whichever is chosen, scoring now happens after the Nov 22 time box, which is late.
 
 **AI use + Ian's judgment:** Claude ran the collection, diagnosed the source change and wrote this entry.
-Ian's judgment: (to fill in).
+Ian's judgment: **accepted**. He chose option B (Claude's recommendation) on 2026-11-25: "B: score now".
 
 ---
 
@@ -363,7 +363,7 @@ Claude recorded it in `decisions.md` before scoring (commit `7418652`), with the
 - Base rate alone, pooled: 0.2290.
 
 **Decision:** the upper bound is not < 0, so the pooled result is inconclusive. Under the pooling rule that makes
-it **STOP: no demonstrated edge**. Ian confirms.
+it **STOP: no demonstrated edge**. Ian confirmed it on 2026-11-25.
 
 **Consequence:**
 - The mention-market calibration gate is closed for S1.
@@ -375,4 +375,4 @@ it **STOP: no demonstrated edge**. Ian confirms.
 transcript base rates alone are far worse. The careful homework didn't add measurable calibration over the price.
 
 **AI use + Ian's judgment:** Claude ran the scorer, wrote the results doc and drafted the decision entry. The verdict
-follows the pre-registered rule. Ian's judgment: (to fill in).
+follows the pre-registered rule. Ian's judgment: **accepted**. On 2026-11-25 he wrote "I confirm STOP".

@@ -153,11 +153,11 @@ Report: `docs/results/score-extension-2026-11-25.md`; marker: `scored-locked.jso
 - Extension alone: 11 events / 403 markets, 0.1383 vs 0.1372; diff +0.0011, CI [−0.0039, +0.0063].
 - **Pooled: 71 events / 2,043 markets, Brier 0.1568 vs market 0.1580; diff −0.0011, 95% CI [−0.0035, +0.0012].**
 - Base rate alone, pooled: 0.2290 (+0.0711), far worse than the market.
-**Decision (by the pre-registered rule, Ian to confirm):**
+**Decision (by the pre-registered rule, confirmed by Ian 2026-11-25):**
 - The size floor is met, and the point estimate is better.
 - The upper bound is +0.0012, which is not < 0. The pooled result is therefore INCONCLUSIVE.
 - After the one extension, the spec and the pooling rule allow only PASS or STOP, so the verdict is **STOP: no
-  demonstrated edge** for the KXTRUMPMENTION calibration gate. Ian's confirmation: (to fill in).
+  demonstrated edge** for the KXTRUMPMENTION calibration gate. **Ian confirmed STOP on 2026-11-25** ("I confirm STOP").
 **Consequence:**
 - The mention-market line ends here for S1. There's no re-tuning, no second extension and no paper trading.
 - The Q7 paper gate stays **INCOMPLETE**; it is never run, because calibration didn't pass.

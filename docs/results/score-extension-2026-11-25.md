@@ -33,7 +33,7 @@ The bootstrap used 10,000 draws over events, seed 20261014.
 3. **Upper 95% bound < 0:** **no**. It is +0.0012.
 
 The pooled result is INCONCLUSIVE. After the one extension only PASS or STOP is allowed, so the pooling rule makes
-this **STOP: no demonstrated edge.** Ian confirms the verdict (`decisions.md`).
+this **STOP: no demonstrated edge.** Ian confirmed the verdict on 2026-11-25 (`decisions.md`).
 
 ## Pooled results by event type (reported only; small groups)
 | Type | Events | Markets | Brier model | Brier market |

@@ -12,7 +12,7 @@ Vance source) Nov 12–15 → **freeze Nov 16** → test set scored **once** aft
 outcomes are refused by `db.outcomes()` unless `--score-test` + the frozen hash. Criteria v2 (`docs/spec.md`, confirmed
 2026-10-14) unchanged. All collection is hand-run, paced batches (`bloodhound collect-*`); nothing runs continuously;
 `bloodhound status` reports counts. **Frozen 2026-11-09: blend-v1, commit `bb92f3a`** (`docs/results/frozen_model.json`, `decisions.md`); Vance dropped.
-**Test scored once 2026-11-09: INCONCLUSIVE** (blend 0.1614 vs market 0.1631, CI [−0.0043, +0.0010]). **Extension scored once 2026-11-25 (late: Factbase redesign, option B, 11 ev / 403 mkts): pooled 71 ev / 2,043 mkts, 0.1568 vs 0.1580, CI [−0.0035, +0.0012] → S1 verdict STOP (no demonstrated edge)**, Ian to confirm (`docs/results/score-extension-2026-11-25.md`). Paper gate INCOMPLETE (not run). Next: class write-up only. Plan: `docs/s1-plan.md`. S0 findings: `docs/s0-research.md`. Update this
+**Test scored once 2026-11-09: INCONCLUSIVE** (blend 0.1614 vs market 0.1631, CI [−0.0043, +0.0010]). **Extension scored once 2026-11-25 (late: Factbase redesign, option B, 11 ev / 403 mkts): pooled 71 ev / 2,043 mkts, 0.1568 vs 0.1580, CI [−0.0035, +0.0012] → S1 verdict STOP (no demonstrated edge)**, confirmed by Ian 2026-11-25 (`docs/results/score-extension-2026-11-25.md`). Paper gate INCOMPLETE (not run). Next: class write-up only. Plan: `docs/s1-plan.md`. S0 findings: `docs/s0-research.md`. Update this
 line when the stage changes.
 
 ## Hard rules
